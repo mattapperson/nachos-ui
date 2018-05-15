@@ -1,5 +1,5 @@
 import "react-native";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import React from "react";
 import renderer from "react-test-renderer";
 
@@ -17,21 +17,7 @@ it("should render correctly", () => {
 });
 
 it("should render disabled", () => {
-  const wrapper = shallow(
-    <Provider>
-      <Checkbox disabled />
-    </Provider>
-  );
-  expect(wrapper.find("TouchableOpacity").prop("disabled")).toBe(true);
-});
-
-it("should call onChange callback", () => {
-  const callback = jest.fn();
-  const wrapper = shallow(
-    <Provider>
-      <Checkbox onValueChange={callback} />
-    </Provider>
-  );
-  wrapper.find("TouchableOpacity").simulate("press");
-  expect(callback).toBeCalled();
+  const wrapper = renderer.create(<Checkbox disabled />);
+  const tree = wrapper.toJSON();
+  expect(tree).toMatchSnapshot();
 });

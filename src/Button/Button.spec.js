@@ -17,21 +17,11 @@ it("should render correctly", () => {
 });
 
 it("should render disabled", () => {
-  const wrapper = shallow(
+  const component = renderer.create(
     <Provider>
       <Button disabled>Submit</Button>
     </Provider>
   );
-  expect(wrapper.find("TouchableOpacity").prop("disabled")).toBe(true);
-});
-
-it("should call onPress callback", () => {
-  const callback = jest.fn();
-  const wrapper = shallow(
-    <Provider>
-      <Button onPress={callback}>Submit</Button>
-    </Provider>
-  );
-  wrapper.find("TouchableOpacity").simulate("press");
-  expect(callback).toBeCalled();
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });

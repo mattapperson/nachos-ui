@@ -29,8 +29,7 @@ const Checkbox = props => {
     onPressOut: onChange.bind(null, value)
   };
 
-  const isChecked = checked || selected;
-
+  const isChecked = checked || selected || false;
   return (
     <View style={disabled ? disabledStyle : {}}>
       <TouchableOpacity
