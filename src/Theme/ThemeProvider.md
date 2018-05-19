@@ -56,7 +56,9 @@ export default (App = () => (
           iconColor: "@linkColor"
         },
         style: {
-          baseText: "@dangerColor"
+          baseText: {
+            color: "@dangerColor"
+          }
         }
       }
     }}
@@ -82,7 +84,9 @@ export default (App = () => (
           iconColor: "red"
         },
         style: {
-          baseText: "green"
+          baseText: {
+            color: "green"
+          }
         }
       }
     }}
