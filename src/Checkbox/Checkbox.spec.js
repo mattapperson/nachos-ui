@@ -1,5 +1,4 @@
 import "react-native";
-import { shallow, mount } from "enzyme";
 import React from "react";
 import renderer from "react-test-renderer";
 
