@@ -44,6 +44,7 @@
     "react-native": ">=0.52.0"
   },
   "dependencies": {
+    "is-obj": "^1.0.1",
     "md5": "^2.2.1",
     "prop-types": "^15.6.1",
     "query-string": "^4.3.1",

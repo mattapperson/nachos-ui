@@ -2,19 +2,20 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { StyleSheet } from "react-native";
 import defaultBranding from "../branding_defaults";
+import isObject from "is-obj";
 
 export const ThemeContext = React.createContext({
   theme: {}
 });
 
-export class Provider extends React.Component {
+export class Provider extends Component {
   themeConfigs = {};
   branding = defaultBranding;
 
   constructor(props) {
     super(props);
     if (props.branding) {
-      this.branding = deepMerge(this.branding, props.branding);
+      this.branding = mergeDeep(this.branding, props.branding);
     }
   }
 
@@ -22,12 +23,14 @@ export class Provider extends React.Component {
     if (this.props.theme && this.props.theme[name])
       themeConfig = mergeDeep(themeConfig, this.props.theme[name]);
 
+    // Turn the themeConfig object into a string, then replace and strings that start with @ with a value from the branding config
+    // so `@darkColor` would pull the value of `this.branding.darkColor`
+    // We then convert the result back into an object
     themeConfig = JSON.parse(
-      JSON.stringify(themeConfig).replace(/@([\w_-]+)/gm, (match, key) => {
-        if (!this.branding[key]) console.log(key);
-
-        return this.branding[key];
-      })
+      JSON.stringify(themeConfig).replace(
+        /@([\w_-]+)/gm,
+        (match, key) => this.branding[key]
+      )
     );
 
     return (this.themeConfigs[name] = {
@@ -101,10 +104,6 @@ export function withTheme(componentName, ThemedComponent) {
       );
     }
   };
-}
-
-function isObject(item) {
-  return item && typeof item === "object" && !Array.isArray(item);
 }
 
 function mergeDeep(target, ...sources) {
