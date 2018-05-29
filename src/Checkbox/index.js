@@ -8,7 +8,7 @@ const Checkbox = props => {
   const {
     activeOpacity,
     disabled,
-    kind,
+    checkComponent,
     checked,
     onValueChange,
     style,
@@ -39,14 +39,16 @@ const Checkbox = props => {
         onPress={() => onValueChange(!checked)}
         {...switcherProp}
       >
-        {isChecked && (
-          <Icon
-            name={iconName}
-            size={iconSize}
-            color={iconColor}
-            style={theme.check}
-          />
-        )}
+        {isChecked &&
+          !checkComponent && (
+            <Icon
+              name={iconName}
+              size={iconSize}
+              color={iconColor}
+              style={theme.check}
+            />
+          )}
+        {isChecked && checkComponent}
       </TouchableOpacity>
     </View>
   );
@@ -98,7 +100,6 @@ Checkbox.propTypes = {
 Checkbox.defaultProps = {
   activeOpacity: 0.8,
   disabled: false,
-  kind: "rounded",
   disabledStyle: { opacity: 0.3 },
   checked: false,
   onValueChange: () => {},
