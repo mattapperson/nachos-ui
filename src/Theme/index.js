@@ -72,10 +72,12 @@ export function withTheme(componentName, ThemedComponent) {
     constructor() {
       super();
       try {
-        ThemeContext._currentValue.updateThemeConfig(
-          componentName,
-          ThemedComponent.themeConfig
-        );
+        if (ThemeContext._currentValue.updateThemeConfig) {
+          ThemeContext._currentValue.updateThemeConfig(
+            componentName,
+            ThemedComponent.themeConfig
+          );
+        }
       } catch (e) {
         console.warn(`failed to update theme for ${componentName}`, e);
       }
