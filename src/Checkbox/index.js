@@ -56,8 +56,8 @@ const Checkbox = props => {
 
 Checkbox.themeConfig = {
   props: {
-    iconName: "md-checkmark",
-    iconColor: "#fff",
+    iconName: "check",
+    iconColor: "@primaryColor",
     iconSize: 18
   },
   style: {
