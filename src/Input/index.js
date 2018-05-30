@@ -58,14 +58,7 @@ const Input = props => {
 };
 
 Input.themeConfig = {
-  props: {
-    iconSize: 20,
-    iconStates: {
-      valid: "md-checkmark",
-      warn: "md-alert",
-      error: "md-close"
-    }
-  },
+  props: {},
   style: {
     base: { alignSelf: "stretch", borderWidth: 1, height: 46 },
     normal: {
@@ -117,6 +110,12 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
+  iconSize: 20,
+  iconStates: {
+    valid: "md-checkmark",
+    warn: "md-alert",
+    error: "md-close"
+  },
   value: "",
   disabled: false,
   status: "normal"

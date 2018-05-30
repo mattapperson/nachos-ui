@@ -24,6 +24,6 @@ H4.themeConfig = {
   }
 };
 
-H4.propTypes = { theme: PropTypes.object };
+H4.propTypes = { ...Text.propTypes };
 
 export default withTheme("H4", H4);

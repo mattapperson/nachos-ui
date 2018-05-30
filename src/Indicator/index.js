@@ -7,13 +7,7 @@ import { withTheme } from "../Theme";
 
 class Indicator extends Component {
   static themeConfig = {
-    props: {
-      types: {
-        success: "#66bd2b",
-        warning: "#ef4836",
-        normal: "@primaryColor"
-      }
-    },
+    props: {},
     style: {
       base: {
         position: "absolute",
@@ -40,7 +34,12 @@ class Indicator extends Component {
 
   static defaultProps = {
     type: "normal",
-    position: "right top"
+    position: "right top",
+    types: {
+      success: "#66bd2b",
+      warning: "#ef4836",
+      normal: "@primaryColor"
+    }
   };
 
   state = {

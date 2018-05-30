@@ -27,10 +27,7 @@ const Progress = props => {
 };
 
 Progress.themeConfig = {
-  props: {
-    width: 300,
-    height: 6
-  },
+  props: {},
   style: {
     outerStyle: {
       backgroundColor: "@disabledColor",
@@ -52,6 +49,8 @@ Progress.propTypes = {
 };
 
 Progress.defaultProps = {
+  width: 300,
+  height: 6,
   progress: 0
 };
 
