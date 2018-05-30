@@ -24,6 +24,6 @@ Em.themeConfig = {
   }
 };
 
-Em.propTypes = { theme: PropTypes.object };
+Em.propTypes = { ...Text.propTypes };
 
 export default withTheme("Em", Em);

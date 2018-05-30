@@ -72,11 +72,7 @@ const SegmentedControlButton = props => {
 };
 
 SegmentedControlButton.themeConfig = {
-  props: {
-    iconSize: 20,
-    iconColor: "@primaryColor",
-    iconPosition: "left"
-  },
+  props: {},
   style: {
     base: {
       height: 50,
@@ -134,7 +130,10 @@ SegmentedControlButton.propTypes = {
 };
 
 SegmentedControlButton.defaultProps = {
-  uppercase: false
+  uppercase: false,
+  iconSize: 20,
+  iconColor: "@primaryColor",
+  iconPosition: "left"
 };
 
 export default withTheme("SegmentedControlButton", SegmentedControlButton);

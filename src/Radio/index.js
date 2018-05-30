@@ -15,11 +15,7 @@ const Radio = ({ theme, ...rest }) => {
 };
 
 Radio.themeConfig = {
-  props: {
-    iconName: "md-checkmark",
-    iconColor: "#fff",
-    iconSize: 18
-  },
+  props: {},
   style: {
     base: {
       position: "relative",
@@ -44,13 +40,19 @@ Radio.themeConfig = {
 };
 
 Radio.propTypes = {
-  checkType: PropTypes.string,
-  kind: PropTypes.string
+  selected: PropTypes.bool,
+  disabled: PropTypes.bool,
+  onValueChange: PropTypes.func,
+  value: PropTypes.string
 };
 
 Radio.defaultProps = {
-  checkType: "circle",
-  kind: "circle"
+  iconSize: 18,
+  activeOpacity: 0.8,
+  disabled: false,
+  disabledStyle: { opacity: 0.3 },
+  selected: false,
+  onValueChange: () => {}
 };
 
 export default withTheme("Radio", Radio);

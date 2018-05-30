@@ -105,9 +105,7 @@ const Button = props => {
 };
 
 Button.themeConfig = {
-  props: {
-    iconActiveColor: "rgba(0, 0, 0, 0.5)"
-  },
+  props: {},
   style: {
     container: { flex: 1 },
     baseBtn: {
@@ -196,6 +194,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  iconActiveColor: "rgba(0, 0, 0, 0.5)",
   iconSize: 16,
   activeOpacity: 0.8,
   disabled: false,

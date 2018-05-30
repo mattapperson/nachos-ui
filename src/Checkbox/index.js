@@ -55,11 +55,7 @@ const Checkbox = props => {
 };
 
 Checkbox.themeConfig = {
-  props: {
-    iconName: "check",
-    iconColor: "@primaryColor",
-    iconSize: 18
-  },
+  props: {},
   style: {
     base: {
       position: "relative",
@@ -93,17 +89,18 @@ Checkbox.propTypes = {
   theme: PropTypes.object.isRequired,
   // NOTE: injected by a Switcher
   value: PropTypes.string,
-  onChange: PropTypes.func,
-  selected: PropTypes.bool
+  onChange: PropTypes.func
 };
 
 Checkbox.defaultProps = {
+  iconName: "check",
+  iconColor: "@primaryColor",
+  iconSize: 18,
   activeOpacity: 0.8,
   disabled: false,
   disabledStyle: { opacity: 0.3 },
   checked: false,
-  onValueChange: () => {},
-  checkType: "icon"
+  onValueChange: () => {}
 };
 
 export default withTheme("Checkbox", Checkbox);

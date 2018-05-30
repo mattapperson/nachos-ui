@@ -24,6 +24,6 @@ Strong.themeConfig = {
   }
 };
 
-Strong.propTypes = { theme: PropTypes.object };
+Strong.propTypes = { ...Text.propTypes };
 
 export default withTheme("Strong", Strong);
