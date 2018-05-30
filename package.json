@@ -10,7 +10,12 @@
     "email": "petr@avocode.com"
   },
   "repository": "avocode/nachos-ui",
-  "keywords": ["react", "react-component", "react-native", "ui-kit"],
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native",
+    "ui-kit"
+  ],
   "scripts": {
     "build": "babel src/ -d lib/",
     "build:web": "webpack --progress -p",
@@ -37,7 +42,9 @@
       "__DEV__": true
     },
     "setupTestFrameworkScriptFile": "<rootDir>/scripts/enzyme_setup.js",
-    "testMatch": ["<rootDir>/src/**/?(*.)spec.js"]
+    "testMatch": [
+      "<rootDir>/src/**/?(*.)spec.js"
+    ]
   },
   "peerDependencies": {
     "react": ">=16.3.0",
@@ -49,17 +56,18 @@
     "prop-types": "^15.6.1",
     "query-string": "^4.3.1",
     "react-art": "^16.3.2",
+    "react-helmet": "^5.2.0",
     "react-native-vector-icons": "^4.6.0"
   },
   "devDependencies": {
     "@expo/vector-icons": "^6.3.1",
-    "@storybook/addon-actions": "^3.4.4",
-    "@storybook/addon-info": "^3.4.4",
-    "@storybook/addon-links": "^3.4.4",
-    "@storybook/addon-options": "^3.4.4",
-    "@storybook/addon-viewport": "^3.4.4",
-    "@storybook/addons": "^3.4.4",
-    "@storybook/react": "^3.4.4",
+    "@storybook/addon-actions": "^3.4.6",
+    "@storybook/addon-info": "^3.4.6",
+    "@storybook/addon-links": "^3.4.6",
+    "@storybook/addon-options": "^3.4.6",
+    "@storybook/addon-viewport": "^3.4.6",
+    "@storybook/addons": "^3.4.6",
+    "@storybook/react": "^3.4.6",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.21.0",
     "babel-eslint": "^7.2.3",

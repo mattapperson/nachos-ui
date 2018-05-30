@@ -6,6 +6,7 @@ module.exports = {
   Carousel: require("./Carousel"),
   Checkbox: require("./Checkbox"),
   Gravatar: require("./Gravatar"),
+  Icon: require("./Icon"),
   Indicator: require("./Indicator"),
   Input: require("./Input"),
   Progress: require("./Progress"),
@@ -15,6 +16,7 @@ module.exports = {
   Slider: require("./Slider"),
   Spinner: require("./Spinner"),
   Switcher: require("./Switcher"),
+  WebStyles: require("./WebStyles"),
 
   // NOTE: Typography
   A: require("./typography/A"),

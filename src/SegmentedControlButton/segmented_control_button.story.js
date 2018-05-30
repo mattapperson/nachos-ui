@@ -12,10 +12,14 @@ const Example = () => {
         <SegmentedControlButton
           value="volume"
           text="Volume"
-          iconName="md-volume-off"
+          iconName="volume-up"
         />
-        <SegmentedControlButton value="walk" text="Walk" iconName="md-walk" />
-        <SegmentedControlButton value="wine" text="Wine" iconName="md-wine" />
+        <SegmentedControlButton value="car" text="Car" iconName="car" />
+        <SegmentedControlButton
+          value="off"
+          text="Volume Off"
+          iconName="volume-off"
+        />
       </Switcher>
       <br />
       <br />
@@ -23,10 +27,14 @@ const Example = () => {
         <SegmentedControlButton
           value="volume"
           text="Volume"
-          iconName="md-volume-off"
+          iconName="volume-up"
         />
-        <SegmentedControlButton value="walk" text="Walk" iconName="md-walk" />
-        <SegmentedControlButton value="wine" text="Wine" iconName="md-wine" />
+        <SegmentedControlButton value="car" text="Car" iconName="car" />
+        <SegmentedControlButton
+          value="off"
+          text="Volume Off"
+          iconName="volume-off"
+        />
       </Switcher>
     </View>
   );
