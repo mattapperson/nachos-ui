@@ -9,7 +9,7 @@ const btnStyle = { margin: 3 };
 const Example = () => {
   return (
     <View style={{ flex: 1, flexDirection: "column" }}>
-      <Button type="success" iconName="user" style={btnStyle}>
+      <Button type="success" iconName="person" style={btnStyle}>
         Success
       </Button>
       <Button type="danger" style={btnStyle}>

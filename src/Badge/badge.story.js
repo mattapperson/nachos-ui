@@ -2,7 +2,6 @@ import { storiesOf } from "../storybook";
 import { withInfo } from "../storybook";
 
 import React from "react";
-import { View } from "react-native";
 import Badge from "./index";
 
 const BadgeExample = () => {
