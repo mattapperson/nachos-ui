@@ -25,6 +25,9 @@ const Example = () => {
   );
 };
 
-storiesOf("Icon", module).add("default", withInfo()(Example));
+storiesOf("Icon", module).add(
+  "default",
+  withInfo({ propTablesExclude: [Text, View] })(Example)
+);
 
 export default Example;
