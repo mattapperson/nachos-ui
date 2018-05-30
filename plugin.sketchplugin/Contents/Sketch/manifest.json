@@ -1,0 +1,32 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "⚙️ Generate Library",
+      "identifier": "react-sketch-library-example",
+      "script": "sketch-library.js",
+      "handler": "generateLibrary"
+    },
+    {
+      "name": "👁 Render Library",
+      "identifier": "render",
+      "script": "sketch-library.js",
+      "handler": "renderLibrary"
+    }
+  ],
+  "menu": {
+    "title": "react-sketch-library",
+    "items": [
+      "react-sketch-library-example",
+      "render"
+    ]
+  },
+  "version": "0.1.2",
+  "description": "Nachos UI is a React Native component library",
+  "name": "react-sketch-library",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
+  "author": "Petr Brzek",
+  "email": "petr@avocode.com"
+}
