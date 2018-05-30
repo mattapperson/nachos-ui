@@ -14,7 +14,7 @@ const Example = () => {
           text="Volume"
           iconName="volume-up"
         />
-        <SegmentedControlButton value="car" text="Car" iconName="car" />
+        <SegmentedControlButton value="call" text="Call" iconName="call" />
         <SegmentedControlButton
           value="off"
           text="Volume Off"
@@ -29,7 +29,7 @@ const Example = () => {
           text="Volume"
           iconName="volume-up"
         />
-        <SegmentedControlButton value="car" text="Car" iconName="car" />
+        <SegmentedControlButton value="call" text="Call" iconName="call" />
         <SegmentedControlButton
           value="off"
           text="Volume Off"

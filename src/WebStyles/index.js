@@ -9,13 +9,9 @@ import { Helmet } from "react-helmet";
 // Also grabbed MaterialIcons
 export default () => (
   <Helmet>
-    <style type="text/css">
-      {` 
-        @font-face {
-          font-family: 'font-awesome';
-          src: local('FontAwesome'), local('font-awesome'), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff) format('woff');
-        }
-      `}
-    </style>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </Helmet>
 );
