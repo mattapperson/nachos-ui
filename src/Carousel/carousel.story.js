@@ -1,5 +1,5 @@
-import { storiesOf } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
+import { storiesOf } from "../storybook";
+import { withInfo } from "../storybook";
 import React from "react";
 import Carousel from "./index";
 import { View, Image } from "react-native";

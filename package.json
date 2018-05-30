@@ -15,7 +15,7 @@
     "build": "babel src/ -d lib/",
     "build:web": "webpack --progress -p",
     "prepublish": "npm run build",
-    "start:native": "exp start ./.storybook-native",
+    "native": "exp start --host=lan ./.storybook-native",
     "test": "jest",
     "test:watch": "jest --watch",
     "start": "start-storybook -p 6006",
