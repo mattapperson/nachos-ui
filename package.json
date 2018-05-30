@@ -10,12 +10,7 @@
     "email": "petr@avocode.com"
   },
   "repository": "avocode/nachos-ui",
-  "keywords": [
-    "react",
-    "react-component",
-    "react-native",
-    "ui-kit"
-  ],
+  "keywords": ["react", "react-component", "react-native", "ui-kit"],
   "scripts": {
     "build": "babel src/ -d lib/",
     "build:web": "webpack --progress -p",
@@ -24,7 +19,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "start": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "docs": "build-storybook -c .storybook -o .styleguide"
   },
   "jest": {
     "moduleNameMapper": {
@@ -42,9 +37,7 @@
       "__DEV__": true
     },
     "setupTestFrameworkScriptFile": "<rootDir>/scripts/enzyme_setup.js",
-    "testMatch": [
-      "<rootDir>/src/**/?(*.)spec.js"
-    ]
+    "testMatch": ["<rootDir>/src/**/?(*.)spec.js"]
   },
   "peerDependencies": {
     "react": ">=16.3.0",
