@@ -196,7 +196,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  iconSize: 24,
+  iconSize: 16,
   activeOpacity: 0.8,
   disabled: false,
   disabledStyle: { opacity: 0.3 },

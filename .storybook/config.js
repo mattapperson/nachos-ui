@@ -1,6 +1,6 @@
 import React from "react";
 import { configure, addDecorator } from "@storybook/react";
-import { Provider } from "../src/Theme";
+import { ThemeProvider, WebStyles } from "../src";
 import { configureViewport } from "@storybook/addon-viewport";
 import PropTable from "./prop_table";
 import { setDefaults } from "@storybook/addon-info";
@@ -17,7 +17,12 @@ setDefaults({
 
 // addDecorator(withViewport("iphone5"));
 
-const ThemeDecorator = storyFn => <Provider>{storyFn()}</Provider>;
+const ThemeDecorator = storyFn => (
+  <ThemeProvider>
+    <WebStyles />
+    {storyFn()}
+  </ThemeProvider>
+);
 addDecorator(ThemeDecorator);
 
 // automatically import all files ending in *.stories.js

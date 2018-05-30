@@ -12,9 +12,9 @@ const Example = () => {
   return (
     <View style={{ flex: 1, flexDirection: "column" }}>
       <Switcher>
-        <Button value="mute" iconName="md-volume-off" style={btnStyle} />
-        <Button value="walk" iconName="md-walk" style={btnStyle} />
-        <Button value="wine" iconName="md-wine" style={btnStyle} />
+        <Button value="mute" iconName="volume-off" style={btnStyle} />
+        <Button value="walk" iconName="volume-up" style={btnStyle} />
+        <Button value="wine" iconName="car" style={btnStyle} />
       </Switcher>
     </View>
   );
