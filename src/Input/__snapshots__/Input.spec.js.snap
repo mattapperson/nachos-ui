@@ -29,14 +29,14 @@ exports[`should render correctly 1`] = `
     spellCheck={true}
     theme={
       Object {
-        "base": 76,
-        "disabled": 78,
-        "error": 80,
-        "icon": 83,
-        "input": 82,
-        "normal": 77,
-        "valid": 79,
-        "warn": 81,
+        "base": 75,
+        "disabled": 77,
+        "error": 79,
+        "icon": 82,
+        "input": 81,
+        "normal": 76,
+        "valid": 78,
+        "warn": 80,
       }
     }
     type="text"
@@ -74,14 +74,14 @@ exports[`should render disabled 1`] = `
     spellCheck={true}
     theme={
       Object {
-        "base": 84,
-        "disabled": 86,
-        "error": 88,
-        "icon": 91,
-        "input": 90,
-        "normal": 85,
-        "valid": 87,
-        "warn": 89,
+        "base": 83,
+        "disabled": 85,
+        "error": 87,
+        "icon": 90,
+        "input": 89,
+        "normal": 84,
+        "valid": 86,
+        "warn": 88,
       }
     }
     type="text"
