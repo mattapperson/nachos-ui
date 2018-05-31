@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension, import/no-named-as-default-member */
 
 import React from "react";
-import { render, TextStyles, View } from "react-sketchapp";
+import { render, Document, View, Page } from "react-sketchapp";
 import designSystem from "./designSystem";
 
 import exposeSymbols from "./exposeSymbols";
@@ -19,19 +19,23 @@ import {
   addLibrary
 } from "./sketch-utils";
 
-const Document = ({ system }) => (
-  <View>
-    <View name="Intro" style={{ width: 420, marginBottom: 34 }}>
-      <Label>
-        This is an example react-sketchapp document, showing how to render a
-        styleguide from a data representation of your design system.
-      </Label>
-    </View>
+const SketchDocument = ({ system }) => (
+  <React.Fragment>
+    <Page name="Branding">
+      <View>
+        <View name="Intro" style={{ width: 420, marginBottom: 34 }}>
+          <Label>
+            This is an example react-sketchapp document, showing how to render a
+            styleguide from a data representation of your design system.
+          </Label>
+        </View>
 
-    <Section title="Color Palette">
-      <Palette colors={system.colors} />
-    </Section>
-  </View>
+        <Section title="Color Palette">
+          <Palette colors={system.colors} />
+        </Section>
+      </View>
+    </Page>
+  </React.Fragment>
 );
 
 export function generateLibrary(context) {
@@ -49,7 +53,6 @@ export function generateLibrary(context) {
 }
 
 export function renderLibrary(context) {
-  //exposeSymbols();
-
-  render(<Document system={designSystem} />, context.document.currentPage());
+  exposeSymbols();
+  render(<SketchDocument system={designSystem} />, context.document.pages()[0]);
 }

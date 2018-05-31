@@ -1,14 +1,20 @@
 import React from "react";
 import { makeSymbol } from "react-sketchapp";
+import { Provider } from "../components/Theme";
 
 export default function() {
-  // makeSymbol(() => <Profile user={{
-  //   profile_image_url:"https://pbs.twimg.com/profile_images/895665264464764930/7Mb3QtEB_400x400.jpg",
-  //   name: "name",
-  //   screen_name: "screen name",
-  //   description: "description",
-  //   location: "location",
-  //   url: "url"
-  // }} />, 'Profile')
-  // makeSymbol(() => <Button label="label" backgroundColor="#000000" />, 'Button')
+  const req = require.context("../components", true, /.sketch.js$/);
+
+  req.keys().forEach(filename => {
+    var sketchComponent = req(filename);
+
+    makeSymbol(
+      () => (
+        <Provider>
+          <sketchComponent.Component />
+        </Provider>
+      ),
+      sketchComponent.name
+    );
+  });
 }

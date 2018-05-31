@@ -65,7 +65,7 @@ var exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 54);
+/******/ 	return __webpack_require__(__webpack_require__.s = 56);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -76,9 +76,9 @@ var exports =
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(55);
+  module.exports = __webpack_require__(57);
 } else {
-  module.exports = __webpack_require__(56);
+  module.exports = __webpack_require__(58);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
@@ -109,11 +109,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(77)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(79)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(78)();
+  module.exports = __webpack_require__(80)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
@@ -793,7 +793,7 @@ exports.generateID = generateID;
 
 var _sketchConstants = __webpack_require__(16);
 
-var _normalizeCssColor = __webpack_require__(75);
+var _normalizeCssColor = __webpack_require__(77);
 
 var _normalizeCssColor2 = _interopRequireDefault(_normalizeCssColor);
 
@@ -1030,11 +1030,11 @@ var _sketchConstants = __webpack_require__(16);
 
 var _sketchappJsonPlugin = __webpack_require__(15);
 
-var _findFont = __webpack_require__(70);
+var _findFont = __webpack_require__(72);
 
 var _findFont2 = _interopRequireDefault(_findFont);
 
-var _getSketchVersion = __webpack_require__(74);
+var _getSketchVersion = __webpack_require__(76);
 
 var _getSketchVersion2 = _interopRequireDefault(_getSketchVersion);
 
@@ -1342,6 +1342,82 @@ function makeSvgLayer(layout, name, svg) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+var _render = __webpack_require__(33);
+
+var _Platform = __webpack_require__(95);
+
+var _Platform2 = _interopRequireDefault(_Platform);
+
+var _stylesheet = __webpack_require__(9);
+
+var _stylesheet2 = _interopRequireDefault(_stylesheet);
+
+var _Document = __webpack_require__(96);
+
+var _Document2 = _interopRequireDefault(_Document);
+
+var _Page = __webpack_require__(97);
+
+var _Page2 = _interopRequireDefault(_Page);
+
+var _Artboard = __webpack_require__(99);
+
+var _Artboard2 = _interopRequireDefault(_Artboard);
+
+var _Image = __webpack_require__(51);
+
+var _Image2 = _interopRequireDefault(_Image);
+
+var _RedBox = __webpack_require__(49);
+
+var _RedBox2 = _interopRequireDefault(_RedBox);
+
+var _Svg = __webpack_require__(101);
+
+var _Svg2 = _interopRequireDefault(_Svg);
+
+var _View = __webpack_require__(31);
+
+var _View2 = _interopRequireDefault(_View);
+
+var _Text = __webpack_require__(50);
+
+var _Text2 = _interopRequireDefault(_Text);
+
+var _TextStyles = __webpack_require__(43);
+
+var _TextStyles2 = _interopRequireDefault(_TextStyles);
+
+var _symbol = __webpack_require__(22);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = {
+  render: _render.render,
+  renderToJSON: _render.renderToJSON,
+  StyleSheet: _stylesheet2.default,
+  Document: _Document2.default,
+  Page: _Page2.default,
+  Artboard: _Artboard2.default,
+  Image: _Image2.default,
+  RedBox: _RedBox2.default,
+  Svg: _Svg2.default,
+  Text: _Text2.default,
+  TextStyles: _TextStyles2.default,
+  View: _View2.default,
+  Platform: _Platform2.default,
+  makeSymbol: _symbol.makeSymbol,
+  getSymbolComponentByName: _symbol.getSymbolComponentByName,
+  injectSymbols: _symbol.injectSymbols
+};
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -1398,13 +1474,13 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _expandStyle = __webpack_require__(79);
+var _expandStyle = __webpack_require__(81);
 
 var _expandStyle2 = _interopRequireDefault(_expandStyle);
 
@@ -1538,82 +1614,6 @@ var StyleSheet = {
 module.exports = StyleSheet;
 
 /***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _render = __webpack_require__(33);
-
-var _Platform = __webpack_require__(93);
-
-var _Platform2 = _interopRequireDefault(_Platform);
-
-var _stylesheet = __webpack_require__(8);
-
-var _stylesheet2 = _interopRequireDefault(_stylesheet);
-
-var _Document = __webpack_require__(94);
-
-var _Document2 = _interopRequireDefault(_Document);
-
-var _Page = __webpack_require__(95);
-
-var _Page2 = _interopRequireDefault(_Page);
-
-var _Artboard = __webpack_require__(97);
-
-var _Artboard2 = _interopRequireDefault(_Artboard);
-
-var _Image = __webpack_require__(51);
-
-var _Image2 = _interopRequireDefault(_Image);
-
-var _RedBox = __webpack_require__(49);
-
-var _RedBox2 = _interopRequireDefault(_RedBox);
-
-var _Svg = __webpack_require__(99);
-
-var _Svg2 = _interopRequireDefault(_Svg);
-
-var _View = __webpack_require__(31);
-
-var _View2 = _interopRequireDefault(_View);
-
-var _Text = __webpack_require__(50);
-
-var _Text2 = _interopRequireDefault(_Text);
-
-var _TextStyles = __webpack_require__(43);
-
-var _TextStyles2 = _interopRequireDefault(_TextStyles);
-
-var _symbol = __webpack_require__(22);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = {
-  render: _render.render,
-  renderToJSON: _render.renderToJSON,
-  StyleSheet: _stylesheet2.default,
-  Document: _Document2.default,
-  Page: _Page2.default,
-  Artboard: _Artboard2.default,
-  Image: _Image2.default,
-  RedBox: _RedBox2.default,
-  Svg: _Svg2.default,
-  Text: _Text2.default,
-  TextStyles: _TextStyles2.default,
-  View: _View2.default,
-  Platform: _Platform2.default,
-  makeSymbol: _symbol.makeSymbol,
-  getSymbolComponentByName: _symbol.getSymbolComponentByName,
-  injectSymbols: _symbol.injectSymbols
-};
-
-/***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1653,7 +1653,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _layerGroup = __webpack_require__(82);
+var _layerGroup = __webpack_require__(84);
 
 var _layerGroup2 = _interopRequireDefault(_layerGroup);
 
@@ -2271,7 +2271,7 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _sketchappJsonPlugin = __webpack_require__(15);
 
-var _stylesheet = __webpack_require__(8);
+var _stylesheet = __webpack_require__(9);
 
 var _stylesheet2 = _interopRequireDefault(_stylesheet);
 
@@ -2485,7 +2485,7 @@ var getSymbolMasterById = exports.getSymbolMasterById = function getSymbolMaster
 
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(7);
+  var invariant = __webpack_require__(8);
   var warning = __webpack_require__(20);
   var ReactPropTypesSecret = __webpack_require__(24);
   var loggedTypeFailures = {};
@@ -2632,8 +2632,8 @@ module.exports = invariant;
  * @format
  */
 
-var Yoga = __webpack_require__(60);
-var nbind = __webpack_require__(62);
+var Yoga = __webpack_require__(62);
+var nbind = __webpack_require__(64);
 
 var ran = false;
 var ret = null;
@@ -2980,7 +2980,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _stylesheet = __webpack_require__(8);
+var _stylesheet = __webpack_require__(9);
 
 var _stylesheet2 = _interopRequireDefault(_stylesheet);
 
@@ -3050,7 +3050,7 @@ module.exports = View;
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/Label.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(9);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Label=function Label(_ref){var bold=_ref.bold,children=_ref.children;return _react2.default.createElement(_reactSketchapp.Text,{style:{color:"#333",fontWeight:bold?"bold":"normal",fontSize:16,lineHeight:24},__source:{fileName:_jsxFileName,lineNumber:5}},children);};exports.default=Label;module.exports=exports["default"];
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/Label.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Label=function Label(_ref){var bold=_ref.bold,children=_ref.children;return _react2.default.createElement(_reactSketchapp.Text,{style:{color:"#333",fontWeight:bold?"bold":"normal",fontSize:16,lineHeight:24},__source:{fileName:_jsxFileName,lineNumber:5}},children);};exports.default=Label;module.exports=exports["default"];
 
 /***/ }),
 /* 33 */
@@ -3206,7 +3206,7 @@ exports.reactTreeToFlexTree = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _reactTestRenderer = __webpack_require__(57);
+var _reactTestRenderer = __webpack_require__(59);
 
 var _reactTestRenderer2 = _interopRequireDefault(_reactTestRenderer);
 
@@ -3226,7 +3226,7 @@ var _pick = __webpack_require__(28);
 
 var _pick2 = _interopRequireDefault(_pick);
 
-var _computeYogaTree = __webpack_require__(67);
+var _computeYogaTree = __webpack_require__(69);
 
 var _computeYogaTree2 = _interopRequireDefault(_computeYogaTree);
 
@@ -3445,11 +3445,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _murmur2js = __webpack_require__(72);
+var _murmur2js = __webpack_require__(74);
 
 var _murmur2js2 = _interopRequireDefault(_murmur2js);
 
-var _sortObjectKeys = __webpack_require__(73);
+var _sortObjectKeys = __webpack_require__(75);
 
 var _sortObjectKeys2 = _interopRequireDefault(_sortObjectKeys);
 
@@ -3537,7 +3537,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _renderers = __webpack_require__(80);
+var _renderers = __webpack_require__(82);
 
 var _renderers2 = _interopRequireDefault(_renderers);
 
@@ -3943,7 +3943,7 @@ var _hashStyle = __webpack_require__(37);
 
 var _hashStyle2 = _interopRequireDefault(_hashStyle);
 
-var _sharedTextStyles = __webpack_require__(87);
+var _sharedTextStyles = __webpack_require__(89);
 
 var _sharedTextStyles2 = _interopRequireDefault(_sharedTextStyles);
 
@@ -4191,7 +4191,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _errorStackParser = __webpack_require__(90);
+var _errorStackParser = __webpack_require__(92);
 
 var _errorStackParser2 = _interopRequireDefault(_errorStackParser);
 
@@ -4357,11 +4357,11 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _stylesheet = __webpack_require__(8);
+var _stylesheet = __webpack_require__(9);
 
 var _stylesheet2 = _interopRequireDefault(_stylesheet);
 
-var _TextStylePropTypes = __webpack_require__(92);
+var _TextStylePropTypes = __webpack_require__(94);
 
 var _TextStylePropTypes2 = _interopRequireDefault(_TextStylePropTypes);
 
@@ -4453,7 +4453,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _stylesheet = __webpack_require__(8);
+var _stylesheet = __webpack_require__(9);
 
 var _stylesheet2 = _interopRequireDefault(_stylesheet);
 
@@ -4465,7 +4465,7 @@ var _ResizeModePropTypes = __webpack_require__(52);
 
 var _ResizeModePropTypes2 = _interopRequireDefault(_ResizeModePropTypes);
 
-var _ImageStylePropTypes = __webpack_require__(98);
+var _ImageStylePropTypes = __webpack_require__(100);
 
 var _ImageStylePropTypes2 = _interopRequireDefault(_ImageStylePropTypes);
 
@@ -4663,12 +4663,25 @@ module.exports = (_temp = _class = function (_React$Component) {
 
 /***/ }),
 /* 54 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/sketch-library.js";exports.generateLibrary=generateLibrary;exports.renderLibrary=renderLibrary;var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(9);var _designSystem=__webpack_require__(120);var _designSystem2=_interopRequireDefault(_designSystem);var _exposeSymbols=__webpack_require__(121);var _exposeSymbols2=_interopRequireDefault(_exposeSymbols);var _Label=__webpack_require__(32);var _Label2=_interopRequireDefault(_Label);var _palette=__webpack_require__(122);var _palette2=_interopRequireDefault(_palette);var _section=__webpack_require__(124);var _section2=_interopRequireDefault(_section);var _sketchUtils=__webpack_require__(125);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Document=function Document(_ref){var system=_ref.system;return _react2.default.createElement(_reactSketchapp.View,{__source:{fileName:_jsxFileName,lineNumber:23}},_react2.default.createElement(_reactSketchapp.View,{name:"Intro",style:{width:420,marginBottom:34},__source:{fileName:_jsxFileName,lineNumber:24}},_react2.default.createElement(_Label2.default,{__source:{fileName:_jsxFileName,lineNumber:25}},"This is an example react-sketchapp document, showing how to render a styleguide from a data representation of your design system.")),_react2.default.createElement(_section2.default,{title:"Color Palette",__source:{fileName:_jsxFileName,lineNumber:31}},_react2.default.createElement(_palette2.default,{colors:system.colors,__source:{fileName:_jsxFileName,lineNumber:32}})));};function generateLibrary(context){var document=(0,_sketchUtils.createNewDocument)(context);context.document=document;renderLibrary(context);var path=(0,_sketchUtils.getStoragePath)(context);(0,_sketchUtils.saveDocument)(document,path);(0,_sketchUtils.closeDocument)(document);(0,_sketchUtils.addLibrary)(path);context.document.showMessage("Library added! 🙌");}function renderLibrary(context){(0,_reactSketchapp.render)(_react2.default.createElement(Document,{system:_designSystem2.default,__source:{fileName:_jsxFileName,lineNumber:54}}),context.document.currentPage());}
+Object.defineProperty(exports,"__esModule",{value:true});exports.default={textColor:"#000",accentColor:"red",alternateTextColor:"#fff",linkColor:"#7945ef",disabledColor:"#f9f9fa",disabledDarkColor:"#b1b2c1",successLightColor:"#e9f9f0",successColor:"#20cd68",passiveSuccessLightColor:"#d5dff7",passiveSuccessColor:"#2f61d5",dangerLightColor:"#ffe2dc",dangerColor:"#ff7052",primaryLightColor:"#e3d9fc",primaryColor:"#7540ee"};module.exports=exports["default"];
 
 /***/ }),
 /* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(console) {Object.defineProperty(exports,"__esModule",{value:true});exports.Provider=exports.ThemeContext=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/components/Theme/index.js";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();exports.withTheme=withTheme;var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _propTypes=__webpack_require__(1);var _propTypes2=_interopRequireDefault(_propTypes);var _reactNative=__webpack_require__(7);var _branding_defaults=__webpack_require__(54);var _branding_defaults2=_interopRequireDefault(_branding_defaults);var _isObj=__webpack_require__(127);var _isObj2=_interopRequireDefault(_isObj);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var ThemeContext=exports.ThemeContext=_react2.default.createContext({theme:{}});var Provider=exports.Provider=function(_Component){_inherits(Provider,_Component);function Provider(props){_classCallCheck(this,Provider);var _this=_possibleConstructorReturn(this,(Provider.__proto__||Object.getPrototypeOf(Provider)).call(this,props));_this.themeConfigs={};_this.branding=_branding_defaults2.default;_this.updateThemeConfig=function(name,themeConfig){if(_this.props.theme&&_this.props.theme[name])themeConfig=mergeDeep(themeConfig,_this.props.theme[name]);themeConfig=JSON.parse(JSON.stringify(themeConfig).replace(/@([\w_-]+)/gm,function(match,key){return _this.branding[key];}));return _this.themeConfigs[name]={computedStyle:themeConfig.style?_reactNative.StyleSheet.create(themeConfig.style):{},props:themeConfig.props};};if(props.branding){_this.branding=mergeDeep(_this.branding,props.branding);}return _this;}_createClass(Provider,[{key:"render",value:function render(){return _react2.default.createElement(ThemeContext.Provider,{value:{theme:this.themeConfigs,updateThemeConfig:this.updateThemeConfig},__source:{fileName:_jsxFileName,lineNumber:46}},this.props.children);}}]);return Provider;}(_react.Component);function withTheme(componentName,ThemedComponent){var _class,_temp;var propTypes=_extends({},ThemedComponent.propTypes);delete propTypes.theme;return _temp=_class=function(_React$Component){_inherits(_class,_React$Component);function _class(){_classCallCheck(this,_class);var _this2=_possibleConstructorReturn(this,(_class.__proto__||Object.getPrototypeOf(_class)).call(this));try{if(ThemeContext._currentValue.updateThemeConfig){ThemeContext._currentValue.updateThemeConfig(componentName,ThemedComponent.themeConfig);}}catch(e){console.warn("failed to update theme for "+componentName,e);}return _this2;}_createClass(_class,[{key:"render",value:function render(){var _this3=this;return _react2.default.createElement(ThemeContext.Consumer,{__source:{fileName:_jsxFileName,lineNumber:88}},function(_ref){var theme=_ref.theme;var computedTheme=(theme[componentName]||{}).computedStyle||{};var fullTheme=_this3.props.theme?mergeDeep({},computedTheme,_this3.props.theme):computedTheme;return _react2.default.createElement(ThemedComponent,_extends({},(theme[componentName]||{}).props||{},_this3.props,{theme:fullTheme,__source:{fileName:_jsxFileName,lineNumber:98}}));});}}]);return _class;}(_react2.default.Component),_class.displayName=componentName,_class.propTypes=_extends({},propTypes),_class.defaultProps=_extends({},ThemedComponent.defaultProps),_temp;}function mergeDeep(target){for(var _len=arguments.length,sources=Array(_len>1?_len-1:0),_key=1;_key<_len;_key++){sources[_key-1]=arguments[_key];}if(!sources.length)return target;var source=sources.shift();if((0,_isObj2.default)(target)&&(0,_isObj2.default)(source)){for(var key in source){if((0,_isObj2.default)(source[key])){if(!target[key])_extends(target,_defineProperty({},key,{}));mergeDeep(target[key],source[key]);}else{_extends(target,_defineProperty({},key,source[key]));}}}return mergeDeep.apply(undefined,[target].concat(sources));}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/sketch-library.js";exports.generateLibrary=generateLibrary;exports.renderLibrary=renderLibrary;var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);var _designSystem=__webpack_require__(122);var _designSystem2=_interopRequireDefault(_designSystem);var _exposeSymbols=__webpack_require__(123);var _exposeSymbols2=_interopRequireDefault(_exposeSymbols);var _Label=__webpack_require__(32);var _Label2=_interopRequireDefault(_Label);var _palette=__webpack_require__(128);var _palette2=_interopRequireDefault(_palette);var _section=__webpack_require__(130);var _section2=_interopRequireDefault(_section);var _sketchUtils=__webpack_require__(131);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SketchDocument=function SketchDocument(_ref){var system=_ref.system;return _react2.default.createElement(_react2.default.Fragment,{__source:{fileName:_jsxFileName,lineNumber:23}},_react2.default.createElement(_reactSketchapp.Page,{name:"Branding",__source:{fileName:_jsxFileName,lineNumber:24}},_react2.default.createElement(_reactSketchapp.View,{__source:{fileName:_jsxFileName,lineNumber:25}},_react2.default.createElement(_reactSketchapp.View,{name:"Intro",style:{width:420,marginBottom:34},__source:{fileName:_jsxFileName,lineNumber:26}},_react2.default.createElement(_Label2.default,{__source:{fileName:_jsxFileName,lineNumber:27}},"This is an example react-sketchapp document, showing how to render a styleguide from a data representation of your design system.")),_react2.default.createElement(_section2.default,{title:"Color Palette",__source:{fileName:_jsxFileName,lineNumber:33}},_react2.default.createElement(_palette2.default,{colors:system.colors,__source:{fileName:_jsxFileName,lineNumber:34}})))));};function generateLibrary(context){var document=(0,_sketchUtils.createNewDocument)(context);context.document=document;renderLibrary(context);var path=(0,_sketchUtils.getStoragePath)(context);(0,_sketchUtils.saveDocument)(document,path);(0,_sketchUtils.closeDocument)(document);(0,_sketchUtils.addLibrary)(path);context.document.showMessage("Library added! 🙌");}function renderLibrary(context){(0,_exposeSymbols2.default)();(0,_reactSketchapp.render)(_react2.default.createElement(SketchDocument,{system:_designSystem2.default,__source:{fileName:_jsxFileName,lineNumber:57}}),context.document.pages()[0]);}
+
+/***/ }),
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4681,7 +4694,7 @@ Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/User
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(13),n=__webpack_require__(7),p=__webpack_require__(19),q=__webpack_require__(14),r="function"===typeof Symbol&&Symbol["for"],t=r?Symbol["for"]("react.element"):60103,u=r?Symbol["for"]("react.portal"):60106,v=r?Symbol["for"]("react.fragment"):60107,w=r?Symbol["for"]("react.strict_mode"):60108,x=r?Symbol["for"]("react.provider"):60109,y=r?Symbol["for"]("react.context"):60110,z=r?Symbol["for"]("react.async_mode"):60111,A=r?Symbol["for"]("react.forward_ref"):
+var m=__webpack_require__(13),n=__webpack_require__(8),p=__webpack_require__(19),q=__webpack_require__(14),r="function"===typeof Symbol&&Symbol["for"],t=r?Symbol["for"]("react.element"):60103,u=r?Symbol["for"]("react.portal"):60106,v=r?Symbol["for"]("react.fragment"):60107,w=r?Symbol["for"]("react.strict_mode"):60108,x=r?Symbol["for"]("react.provider"):60109,y=r?Symbol["for"]("react.context"):60110,z=r?Symbol["for"]("react.async_mode"):60111,A=r?Symbol["for"]("react.forward_ref"):
 60112,B="function"===typeof Symbol&&Symbol.iterator;function C(a){for(var b=arguments.length-1,e="http://reactjs.org/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);n(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",e)}var D={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};
 function E(a,b,e){this.props=a;this.context=b;this.refs=p;this.updater=e||D}E.prototype.isReactComponent={};E.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?C("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};E.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};function F(){}F.prototype=E.prototype;function G(a,b,e){this.props=a;this.context=b;this.refs=p;this.updater=e||D}var H=G.prototype=new F;
 H.constructor=G;m(H,E.prototype);H.isPureReactComponent=!0;var I={current:null},J=Object.prototype.hasOwnProperty,K={key:!0,ref:!0,__self:!0,__source:!0};
@@ -4697,7 +4710,7 @@ Y=X&&W||X;module.exports=Y["default"]?Y["default"]:Y;
 
 
 /***/ }),
-/* 56 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4719,7 +4732,7 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var _assign = __webpack_require__(13);
-var invariant = __webpack_require__(7);
+var invariant = __webpack_require__(8);
 var emptyObject = __webpack_require__(19);
 var warning = __webpack_require__(20);
 var emptyFunction = __webpack_require__(14);
@@ -6119,22 +6132,22 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(5)))
 
 /***/ }),
-/* 57 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(58);
+  module.exports = __webpack_require__(60);
 } else {
-  module.exports = __webpack_require__(59);
+  module.exports = __webpack_require__(61);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 58 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6147,7 +6160,7 @@ if (process.env.NODE_ENV === 'production') {
  * LICENSE file in the root directory of this source tree.
  */
 
-var aa=__webpack_require__(7),ba=__webpack_require__(13),ca=__webpack_require__(0),m=__webpack_require__(19),da=__webpack_require__(35);function n(a){for(var b=arguments.length-1,d="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)d+="&args[]="+encodeURIComponent(arguments[c+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",d)}
+var aa=__webpack_require__(8),ba=__webpack_require__(13),ca=__webpack_require__(0),m=__webpack_require__(19),da=__webpack_require__(35);function n(a){for(var b=arguments.length-1,d="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)d+="&args[]="+encodeURIComponent(arguments[c+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",d)}
 var ea=ca.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,x="function"===typeof Symbol&&Symbol.for,fa=x?Symbol.for("react.element"):60103,ha=x?Symbol.for("react.portal"):60106,y=x?Symbol.for("react.fragment"):60107,ja=x?Symbol.for("react.strict_mode"):60108,ka=x?Symbol.for("react.profiler"):60114,la=x?Symbol.for("react.provider"):60109,ma=x?Symbol.for("react.context"):60110,na=x?Symbol.for("react.async_mode"):60111,oa=x?Symbol.for("react.forward_ref"):60112,pa=x?Symbol.for("react.timeout"):
 60113,qa="function"===typeof Symbol&&Symbol.iterator;function ra(a){if(null===a||"undefined"===typeof a)return null;a=qa&&a[qa]||a["@@iterator"];return"function"===typeof a?a:null}
 function sa(a){var b=a.type;if("function"===typeof b)return b.displayName||b.name;if("string"===typeof b)return b;switch(b){case na:return"AsyncMode";case ma:return"Context.Consumer";case y:return"ReactFragment";case ha:return"ReactPortal";case ka:return"Profiler("+a.pendingProps.id+")";case la:return"Context.Provider";case ja:return"StrictMode";case pa:return"Timeout"}if("object"===typeof b&&null!==b)switch(b.$$typeof){case oa:return a=b.render.displayName||b.render.name||"",""!==a?"ForwardRef("+
@@ -6262,7 +6275,7 @@ unstable_setNowImplementation:function(a){xa=a}},nd={default:md},od=nd&&md||nd;m
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5), __webpack_require__(12)["setTimeout"]))
 
 /***/ }),
-/* 59 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6283,7 +6296,7 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var invariant = __webpack_require__(7);
+var invariant = __webpack_require__(8);
 var _assign = __webpack_require__(13);
 var warning = __webpack_require__(20);
 var React = __webpack_require__(0);
@@ -15582,7 +15595,7 @@ module.exports = reactTestRenderer;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(5), __webpack_require__(12)["setTimeout"]))
 
 /***/ }),
-/* 60 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15608,7 +15621,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * @format
  */
 
-var CONSTANTS = __webpack_require__(61);
+var CONSTANTS = __webpack_require__(63);
 
 var Layout = function () {
   function Layout(left, right, top, bottom, width, height) {
@@ -15835,7 +15848,7 @@ module.exports = function (bind, lib) {
 };
 
 /***/ }),
-/* 61 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15951,7 +15964,7 @@ var CONSTANTS = {
 module.exports = CONSTANTS;
 
 /***/ }),
-/* 62 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process, console, clearInterval, setTimeout, setInterval, Buffer) {var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, wrapper) {
@@ -25776,10 +25789,10 @@ module.exports = CONSTANTS;
   }run();
 });
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(5), __webpack_require__(36)["clearInterval"], __webpack_require__(12)["setTimeout"], __webpack_require__(36)["setInterval"], __webpack_require__(63).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(5), __webpack_require__(36)["clearInterval"], __webpack_require__(12)["setTimeout"], __webpack_require__(36)["setInterval"], __webpack_require__(65).Buffer))
 
 /***/ }),
-/* 63 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25793,9 +25806,9 @@ module.exports = CONSTANTS;
 
 
 
-var base64 = __webpack_require__(64)
-var ieee754 = __webpack_require__(65)
-var isArray = __webpack_require__(66)
+var base64 = __webpack_require__(66)
+var ieee754 = __webpack_require__(67)
+var isArray = __webpack_require__(68)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -27576,7 +27589,7 @@ function isnan (val) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
 
 /***/ }),
-/* 64 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27734,7 +27747,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 65 */
+/* 67 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -27824,7 +27837,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 66 */
+/* 68 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -27835,7 +27848,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 67 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27849,7 +27862,7 @@ var _yogaLayout = __webpack_require__(26);
 
 var yoga = _interopRequireWildcard(_yogaLayout);
 
-var _computeYogaNode2 = __webpack_require__(68);
+var _computeYogaNode2 = __webpack_require__(70);
 
 var _computeYogaNode3 = _interopRequireDefault(_computeYogaNode2);
 
@@ -27898,7 +27911,7 @@ var treeToNodes = function treeToNodes(root, context) {
 exports.default = treeToNodes;
 
 /***/ }),
-/* 68 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27917,7 +27930,7 @@ var _Context = __webpack_require__(27);
 
 var _Context2 = _interopRequireDefault(_Context);
 
-var _createStringMeasurer = __webpack_require__(69);
+var _createStringMeasurer = __webpack_require__(71);
 
 var _createStringMeasurer2 = _interopRequireDefault(_createStringMeasurer);
 
@@ -27935,7 +27948,7 @@ var _computeTextTree2 = _interopRequireDefault(_computeTextTree);
 
 var _constants = __webpack_require__(10);
 
-var _isNullOrUndefined = __webpack_require__(76);
+var _isNullOrUndefined = __webpack_require__(78);
 
 var _isNullOrUndefined2 = _interopRequireDefault(_isNullOrUndefined);
 
@@ -28283,7 +28296,7 @@ var computeYogaNode = function computeYogaNode(node, context) {
 exports.default = computeYogaNode;
 
 /***/ }),
-/* 69 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28330,7 +28343,7 @@ var createStringMeasurer = function createStringMeasurer(textNodes) {
 exports.default = createStringMeasurer;
 
 /***/ }),
-/* 70 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28340,7 +28353,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _types = __webpack_require__(71);
+var _types = __webpack_require__(73);
 
 var _hashStyle = __webpack_require__(37);
 
@@ -28539,14 +28552,14 @@ var findFont = function findFont(style) {
 exports.default = findFont;
 
 /***/ }),
-/* 71 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 /***/ }),
-/* 72 */
+/* 74 */
 /***/ (function(module, exports) {
 
 /**
@@ -28598,7 +28611,7 @@ module.exports = function murmur2js(str) {
 
 
 /***/ }),
-/* 73 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28623,7 +28636,7 @@ var sortObjectKeys = function sortObjectKeys(obj) {
 exports.default = sortObjectKeys;
 
 /***/ }),
-/* 74 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28641,7 +28654,7 @@ function getSketchVersion() {
 }
 
 /***/ }),
-/* 75 */
+/* 77 */
 /***/ (function(module, exports) {
 
 /*
@@ -29010,7 +29023,7 @@ module.exports = normalizeColor;
 
 
 /***/ }),
-/* 76 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29025,7 +29038,7 @@ exports.default = function (value) {
 };
 
 /***/ }),
-/* 77 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29039,7 +29052,7 @@ exports.default = function (value) {
 
 
 var emptyFunction = __webpack_require__(14);
-var invariant = __webpack_require__(7);
+var invariant = __webpack_require__(8);
 var warning = __webpack_require__(20);
 var assign = __webpack_require__(13);
 
@@ -29575,7 +29588,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(5)))
 
 /***/ }),
-/* 78 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29589,7 +29602,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 var emptyFunction = __webpack_require__(14);
-var invariant = __webpack_require__(7);
+var invariant = __webpack_require__(8);
 var ReactPropTypesSecret = __webpack_require__(24);
 
 module.exports = function() {
@@ -29640,7 +29653,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 79 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29767,7 +29780,7 @@ var expandStyle = function expandStyle(style) {
 module.exports = expandStyle;
 
 /***/ }),
-/* 80 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29775,19 +29788,19 @@ module.exports = expandStyle;
 
 /* eslint-disable global-require */
 var renderers = {
-  artboard: __webpack_require__(81),
-  image: __webpack_require__(83),
-  svg: __webpack_require__(84),
-  text: __webpack_require__(85),
+  artboard: __webpack_require__(83),
+  image: __webpack_require__(85),
+  svg: __webpack_require__(86),
+  text: __webpack_require__(87),
   view: __webpack_require__(42),
-  symbolinstance: __webpack_require__(88),
-  symbolmaster: __webpack_require__(89)
+  symbolinstance: __webpack_require__(90),
+  symbolmaster: __webpack_require__(91)
 };
 
 module.exports = renderers;
 
 /***/ }),
-/* 81 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29847,7 +29860,7 @@ var ArtboardRenderer = function (_SketchRenderer) {
 module.exports = ArtboardRenderer;
 
 /***/ }),
-/* 82 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29903,7 +29916,7 @@ var layerGroup = function layerGroup(x, y, width, height, opacity, resizingConst
 exports.default = layerGroup;
 
 /***/ }),
-/* 83 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30112,7 +30125,7 @@ var ImageRenderer = function (_SketchRenderer) {
 module.exports = ImageRenderer;
 
 /***/ }),
-/* 84 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30231,7 +30244,7 @@ var SvgRenderer = function (_ViewRenderer) {
 module.exports = SvgRenderer;
 
 /***/ }),
-/* 85 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30243,7 +30256,7 @@ var _SketchRenderer2 = __webpack_require__(11);
 
 var _SketchRenderer3 = _interopRequireDefault(_SketchRenderer2);
 
-var _textLayers = __webpack_require__(86);
+var _textLayers = __webpack_require__(88);
 
 var _textLayers2 = _interopRequireDefault(_textLayers);
 
@@ -30314,7 +30327,7 @@ var TextRenderer = function (_SketchRenderer) {
 module.exports = TextRenderer;
 
 /***/ }),
-/* 86 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30358,7 +30371,7 @@ var makeTextLayer = function makeTextLayer(frame, name, textNodes, resizingConst
 exports.default = makeTextLayer;
 
 /***/ }),
-/* 87 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30438,7 +30451,7 @@ var TextStyles = function () {
 exports.default = new TextStyles();
 
 /***/ }),
-/* 88 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30643,7 +30656,7 @@ var SymbolInstanceRenderer = function (_SketchRenderer) {
 module.exports = SymbolInstanceRenderer;
 
 /***/ }),
-/* 89 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30687,7 +30700,7 @@ var SymbolMasterRenderer = function (_SketchRenderer) {
 module.exports = SymbolMasterRenderer;
 
 /***/ }),
-/* 90 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(root, factory) {
@@ -30696,7 +30709,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
     /* istanbul ignore next */
     if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(91)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(93)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -30887,7 +30900,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 91 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(root, factory) {
@@ -31007,7 +31020,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 92 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31016,7 +31029,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 module.exports = {};
 
 /***/ }),
-/* 93 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31036,7 +31049,7 @@ var Platform = {
 exports.default = Platform;
 
 /***/ }),
-/* 94 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31094,7 +31107,7 @@ Document.propTypes = propTypes;
 module.exports = Document;
 
 /***/ }),
-/* 95 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31112,11 +31125,11 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _stylesheet = __webpack_require__(8);
+var _stylesheet = __webpack_require__(9);
 
 var _stylesheet2 = _interopRequireDefault(_stylesheet);
 
-var _PageStylePropTypes = __webpack_require__(96);
+var _PageStylePropTypes = __webpack_require__(98);
 
 var _PageStylePropTypes2 = _interopRequireDefault(_PageStylePropTypes);
 
@@ -31175,7 +31188,7 @@ Page.propTypes = propTypes;
 module.exports = Page;
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31184,7 +31197,7 @@ module.exports = Page;
 module.exports = {};
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31202,7 +31215,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _stylesheet = __webpack_require__(8);
+var _stylesheet = __webpack_require__(9);
 
 var _stylesheet2 = _interopRequireDefault(_stylesheet);
 
@@ -31260,7 +31273,7 @@ Artboard.propTypes = propTypes;
 module.exports = Artboard;
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31287,7 +31300,7 @@ exports.default = _extends({}, _ViewStylePropTypes2.default, {
 });
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31296,29 +31309,29 @@ exports.default = _extends({}, _ViewStylePropTypes2.default, {
 module.exports = __webpack_require__(53);
 
 module.exports.Svg = __webpack_require__(53);
-module.exports.Circle = __webpack_require__(100);
-module.exports.ClipPath = __webpack_require__(101);
-module.exports.Defs = __webpack_require__(102);
-module.exports.Ellipse = __webpack_require__(103);
-module.exports.G = __webpack_require__(104);
-module.exports.Image = __webpack_require__(105);
-module.exports.Line = __webpack_require__(106);
-module.exports.LinearGradient = __webpack_require__(107);
-module.exports.Path = __webpack_require__(108);
-module.exports.Pattern = __webpack_require__(109);
-module.exports.Polygon = __webpack_require__(110);
-module.exports.Polyline = __webpack_require__(111);
-module.exports.RadialGradient = __webpack_require__(112);
-module.exports.Rect = __webpack_require__(113);
-module.exports.Stop = __webpack_require__(114);
-module.exports.Symbol = __webpack_require__(115);
-module.exports.Text = __webpack_require__(116);
-module.exports.TextPath = __webpack_require__(117);
-module.exports.TSpan = __webpack_require__(118);
-module.exports.Use = __webpack_require__(119);
+module.exports.Circle = __webpack_require__(102);
+module.exports.ClipPath = __webpack_require__(103);
+module.exports.Defs = __webpack_require__(104);
+module.exports.Ellipse = __webpack_require__(105);
+module.exports.G = __webpack_require__(106);
+module.exports.Image = __webpack_require__(107);
+module.exports.Line = __webpack_require__(108);
+module.exports.LinearGradient = __webpack_require__(109);
+module.exports.Path = __webpack_require__(110);
+module.exports.Pattern = __webpack_require__(111);
+module.exports.Polygon = __webpack_require__(112);
+module.exports.Polyline = __webpack_require__(113);
+module.exports.RadialGradient = __webpack_require__(114);
+module.exports.Rect = __webpack_require__(115);
+module.exports.Stop = __webpack_require__(116);
+module.exports.Symbol = __webpack_require__(117);
+module.exports.Text = __webpack_require__(118);
+module.exports.TextPath = __webpack_require__(119);
+module.exports.TSpan = __webpack_require__(120);
+module.exports.Use = __webpack_require__(121);
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31382,7 +31395,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31435,7 +31448,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31487,7 +31500,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31553,7 +31566,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31609,7 +31622,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }(_react2.default.Component), _class.propTypes = _extends({}, _props2.pathProps, _props2.fontProps), _temp);
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31687,7 +31700,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31753,7 +31766,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31826,7 +31839,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31888,7 +31901,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }), _temp);
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31957,7 +31970,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32021,7 +32034,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32085,7 +32098,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32162,7 +32175,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32232,7 +32245,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32299,7 +32312,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32360,7 +32373,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32434,7 +32447,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32495,7 +32508,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32569,7 +32582,7 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32643,46 +32656,87 @@ module.exports = (_temp = _class = function (_React$Component) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
-/* 120 */
-/***/ (function(module, exports, __webpack_require__) {
-
-Object.defineProperty(exports,"__esModule",{value:true});exports.colors=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _branding_defaults=__webpack_require__(126);var _branding_defaults2=_interopRequireDefault(_branding_defaults);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var colors=exports.colors=_branding_defaults2.default;exports.default={colors:Object.keys(colors).reduce(function(acc,name){return _extends({},acc,_defineProperty({},name,{hex:colors[name],contrast:1,accessibility:{aa:true,aaLarge:true,aaa:true,aaaLarge:true}}));},{})};
-
-/***/ }),
-/* 121 */
-/***/ (function(module, exports, __webpack_require__) {
-
-Object.defineProperty(exports,"__esModule",{value:true});exports.default=function(){};var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(9);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}module.exports=exports["default"];
-
-/***/ }),
 /* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/palette.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(9);var _swatch=__webpack_require__(123);var _swatch2=_interopRequireDefault(_swatch);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SWATCH_WIDTH=100;var Palette=function Palette(_ref){var colors=_ref.colors;return _react2.default.createElement(_reactSketchapp.View,{style:{width:(SWATCH_WIDTH+48)*4,flexWrap:"wrap",flexDirection:"row"},__source:{fileName:_jsxFileName,lineNumber:8}},Object.keys(colors).map(function(name){return _react2.default.createElement(_swatch2.default,{key:name,color:colors[name],name:name,__source:{fileName:_jsxFileName,lineNumber:16}});}));};exports.default=Palette;module.exports=exports["default"];
+Object.defineProperty(exports,"__esModule",{value:true});exports.colors=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _branding_defaults=__webpack_require__(54);var _branding_defaults2=_interopRequireDefault(_branding_defaults);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var colors=exports.colors=_branding_defaults2.default;exports.default={colors:Object.keys(colors).reduce(function(acc,name){return _extends({},acc,_defineProperty({},name,{hex:colors[name],contrast:1,accessibility:{aa:true,aaLarge:true,aaa:true,aaaLarge:true}}));},{})};
 
 /***/ }),
 /* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/swatch.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(9);var _Label=__webpack_require__(32);var _Label2=_interopRequireDefault(_Label);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SWATCH_WIDTH=100;var Swatch=function Swatch(_ref){var color=_ref.color,name=_ref.name;return _react2.default.createElement(_reactSketchapp.View,{name:name,style:{marginBottom:48,marginRight:48},__source:{fileName:_jsxFileName,lineNumber:8}},_react2.default.createElement(_reactSketchapp.View,{style:{width:SWATCH_WIDTH,height:SWATCH_WIDTH,backgroundColor:color.hex,borderRadius:4,marginBottom:8},__source:{fileName:_jsxFileName,lineNumber:9}}),_react2.default.createElement(_Label2.default,{bold:true,__source:{fileName:_jsxFileName,lineNumber:18}},name),_react2.default.createElement(_Label2.default,{__source:{fileName:_jsxFileName,lineNumber:19}},color.hex));};exports.default=Swatch;module.exports=exports["default"];
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/exposeSymbols.js";exports.default=function(){var req=__webpack_require__(124);req.keys().forEach(function(filename){var sketchComponent=req(filename);(0,_reactSketchapp.makeSymbol)(function(){return _react2.default.createElement(_Theme.Provider,{__source:{fileName:_jsxFileName,lineNumber:13}},_react2.default.createElement(sketchComponent.Component,{__source:{fileName:_jsxFileName,lineNumber:14}}));},sketchComponent.name);});};var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);var _Theme=__webpack_require__(55);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}module.exports=exports["default"];
 
 /***/ }),
 /* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/section.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(9);var _Label=__webpack_require__(32);var _Label2=_interopRequireDefault(_Label);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Section=function Section(_ref){var title=_ref.title,children=_ref.children;return _react2.default.createElement(_reactSketchapp.View,{style:{marginBottom:96,flexDirection:"row"},__source:{fileName:_jsxFileName,lineNumber:6}},_react2.default.createElement(_reactSketchapp.View,{style:{width:200},__source:{fileName:_jsxFileName,lineNumber:7}},_react2.default.createElement(_Label2.default,{bold:true,__source:{fileName:_jsxFileName,lineNumber:8}},title)),_react2.default.createElement(_reactSketchapp.View,{__source:{fileName:_jsxFileName,lineNumber:10}},children));};exports.default=Section;module.exports=exports["default"];
+var map = {
+	"./Badge/badge.sketch.js": 125
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 124;
 
 /***/ }),
 /* 125 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});exports.createNewDocument=createNewDocument;exports.getStoragePath=getStoragePath;exports.saveDocument=saveDocument;exports.closeDocument=closeDocument;exports.addLibrary=addLibrary;function createNewDocument(context){return context.api().newDocument()._object;}function getStoragePath(context){return context.scriptPath.split('Contents/Sketch/')[0]+context.command.identifier()+'.sketch';}function saveDocument(document,path){var error=MOPointer.alloc().init();var url=NSURL.URLWithString(path);var oldUrl=NSURL.URLWithString('not used');document.writeToURL_ofType_forSaveOperation_originalContentsURL_error(url,0,NSSaveToOperation,oldUrl,error);}function closeDocument(document){document.close();}function addLibrary(path){var libUrl=NSURL.fileURLWithPath_(path);var libraryController=AppController.sharedInstance().librariesController();libraryController.addAssetLibraryAtURL_(libUrl);}
+Object.defineProperty(exports,"__esModule",{value:true});exports.name=exports.Component=undefined;var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/components/Badge/badge.sketch.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _index=__webpack_require__(126);var _index2=_interopRequireDefault(_index);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Component=exports.Component=function Component(){return _react2.default.createElement(_index2.default,{value:123,__source:{fileName:_jsxFileName,lineNumber:5}});};var name=exports.name="Badge";
 
 /***/ }),
 /* 126 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/components/Badge/index.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _propTypes=__webpack_require__(1);var _propTypes2=_interopRequireDefault(_propTypes);var _reactNative=__webpack_require__(7);var _Theme=__webpack_require__(55);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Badge=function Badge(props){var color=props.color,style=props.style,textStyle=props.textStyle,value=props.value,theme=props.theme;return _react2.default.createElement(_reactNative.View,{style:theme.container,__source:{fileName:_jsxFileName,lineNumber:10}},_react2.default.createElement(_reactNative.View,{style:[theme.base,color?{backgroundColor:color}:{},style],__source:{fileName:_jsxFileName,lineNumber:11}},_react2.default.createElement(_reactNative.Text,{style:[theme.text,textStyle],__source:{fileName:_jsxFileName,lineNumber:14}},value)));};Badge.themeConfig={style:{container:{flexDirection:"row"},base:{padding:10,paddingVertical:4,backgroundColor:"@accentColor",borderRadius:20,minWidth:40},text:{fontSize:12,color:"#fff",textAlign:"center"}}};Badge.propTypes={color:_propTypes2.default.string,style:_propTypes2.default.oneOfType([_propTypes2.default.object,_propTypes2.default.array]),textStyle:_propTypes2.default.oneOfType([_propTypes2.default.object,_propTypes2.default.array]),value:_propTypes2.default.oneOfType([_propTypes2.default.string,_propTypes2.default.number]).isRequired,theme:_propTypes2.default.object};exports.default=(0,_Theme.withTheme)("Badge",Badge);module.exports=exports["default"];
+
+/***/ }),
+/* 127 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+module.exports = function (x) {
+	var type = typeof x;
+	return x !== null && (type === 'object' || type === 'function');
+};
+
+
+/***/ }),
+/* 128 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/palette.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);var _swatch=__webpack_require__(129);var _swatch2=_interopRequireDefault(_swatch);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SWATCH_WIDTH=100;var Palette=function Palette(_ref){var colors=_ref.colors;return _react2.default.createElement(_reactSketchapp.View,{style:{width:(SWATCH_WIDTH+48)*4,flexWrap:"wrap",flexDirection:"row"},__source:{fileName:_jsxFileName,lineNumber:8}},Object.keys(colors).map(function(name){return _react2.default.createElement(_swatch2.default,{key:name,color:colors[name],name:name,__source:{fileName:_jsxFileName,lineNumber:16}});}));};exports.default=Palette;module.exports=exports["default"];
+
+/***/ }),
+/* 129 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/swatch.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);var _Label=__webpack_require__(32);var _Label2=_interopRequireDefault(_Label);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SWATCH_WIDTH=100;var Swatch=function Swatch(_ref){var color=_ref.color,name=_ref.name;return _react2.default.createElement(_reactSketchapp.View,{name:name,style:{marginBottom:48,marginRight:48},__source:{fileName:_jsxFileName,lineNumber:8}},_react2.default.createElement(_reactSketchapp.View,{style:{width:SWATCH_WIDTH,height:SWATCH_WIDTH,backgroundColor:color.hex,borderRadius:4,marginBottom:8},__source:{fileName:_jsxFileName,lineNumber:9}}),_react2.default.createElement(_Label2.default,{bold:true,__source:{fileName:_jsxFileName,lineNumber:18}},name),_react2.default.createElement(_Label2.default,{__source:{fileName:_jsxFileName,lineNumber:19}},color.hex));};exports.default=Swatch;module.exports=exports["default"];
+
+/***/ }),
+/* 130 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/section.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);var _Label=__webpack_require__(32);var _Label2=_interopRequireDefault(_Label);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Section=function Section(_ref){var title=_ref.title,children=_ref.children;return _react2.default.createElement(_reactSketchapp.View,{style:{marginBottom:96,flexDirection:"row"},__source:{fileName:_jsxFileName,lineNumber:6}},_react2.default.createElement(_reactSketchapp.View,{style:{width:200},__source:{fileName:_jsxFileName,lineNumber:7}},_react2.default.createElement(_Label2.default,{bold:true,__source:{fileName:_jsxFileName,lineNumber:8}},title)),_react2.default.createElement(_reactSketchapp.View,{__source:{fileName:_jsxFileName,lineNumber:10}},children));};exports.default=Section;module.exports=exports["default"];
+
+/***/ }),
+/* 131 */
 /***/ (function(module, exports) {
 
-Object.defineProperty(exports,"__esModule",{value:true});exports.default={textColor:"#000",accentColor:"red",alternateTextColor:"#fff",linkColor:"#7945ef",disabledColor:"#f9f9fa",disabledDarkColor:"#b1b2c1",successLightColor:"#e9f9f0",successColor:"#20cd68",passiveSuccessLightColor:"#d5dff7",passiveSuccessColor:"#2f61d5",dangerLightColor:"#ffe2dc",dangerColor:"#ff7052",primaryLightColor:"#e3d9fc",primaryColor:"#7540ee"};module.exports=exports["default"];
+Object.defineProperty(exports,"__esModule",{value:true});exports.createNewDocument=createNewDocument;exports.getStoragePath=getStoragePath;exports.saveDocument=saveDocument;exports.closeDocument=closeDocument;exports.addLibrary=addLibrary;function createNewDocument(context){return context.api().newDocument()._object;}function getStoragePath(context){return context.scriptPath.split('Contents/Sketch/')[0]+context.command.identifier()+'.sketch';}function saveDocument(document,path){var error=MOPointer.alloc().init();var url=NSURL.URLWithString(path);var oldUrl=NSURL.URLWithString('not used');document.writeToURL_ofType_forSaveOperation_originalContentsURL_error(url,0,NSSaveToOperation,oldUrl,error);}function closeDocument(document){document.close();}function addLibrary(path){var libUrl=NSURL.fileURLWithPath_(path);var libraryController=AppController.sharedInstance().librariesController();libraryController.addAssetLibraryAtURL_(libUrl);}
 
 /***/ })
 /******/ ]);
