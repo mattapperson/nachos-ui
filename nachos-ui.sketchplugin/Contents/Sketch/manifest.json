@@ -24,7 +24,7 @@
   },
   "version": "0.1.2",
   "description": "Nachos UI is a React Native component library",
-  "name": "react-sketch-library",
+  "name": "nachos-ui-library",
   "disableCocoaScriptPreprocessor": true,
   "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
   "author": "Petr Brzek",

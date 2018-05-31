@@ -26,9 +26,9 @@
     "start-sketch": "skpm-build --watch --run"
   },
   "skpm": {
-    "name": "react-sketch-library",
+    "name": "nachos-ui-library",
     "manifest": "src/sketchapp-library/manifest.json",
-    "main": "scripts/plugin.sketchplugin"
+    "main": "nachos-ui.sketchplugin"
   },
   "engines": {
     "sketch": ">=3.0"
