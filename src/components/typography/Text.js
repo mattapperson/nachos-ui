@@ -1,12 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text as RNText } from "react-native";
+import { Text as RNText, StyleSheet } from "react-native";
 import { withTheme } from "../Theme";
 
 const Text = props => {
   const theme = props.theme;
   const { ...textProps } = props;
 
+  if (textProps.style) {
+    textProps.style = StyleSheet.flatten(textProps.style);
+  }
   textProps.style = [theme.base, { textAlign: props.align }, textProps.style];
 
   // NOTE: delete Component specific props
@@ -19,6 +22,7 @@ const Text = props => {
 Text.themeConfig = {
   style: {
     base: {
+      fontFamily: "Helvetica",
       fontSize: 14,
       fontWeight: "200",
       fontStyle: "normal",

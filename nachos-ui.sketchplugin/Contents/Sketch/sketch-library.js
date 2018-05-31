@@ -797,7 +797,7 @@ var _normalizeCssColor = __webpack_require__(77);
 
 var _normalizeCssColor2 = _interopRequireDefault(_normalizeCssColor);
 
-var _hacksForJSONImpl = __webpack_require__(6);
+var _hacksForJSONImpl = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1011,6 +1011,82 @@ module.exports = console
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _render = __webpack_require__(34);
+
+var _Platform = __webpack_require__(95);
+
+var _Platform2 = _interopRequireDefault(_Platform);
+
+var _stylesheet = __webpack_require__(9);
+
+var _stylesheet2 = _interopRequireDefault(_stylesheet);
+
+var _Document = __webpack_require__(96);
+
+var _Document2 = _interopRequireDefault(_Document);
+
+var _Page = __webpack_require__(97);
+
+var _Page2 = _interopRequireDefault(_Page);
+
+var _Artboard = __webpack_require__(99);
+
+var _Artboard2 = _interopRequireDefault(_Artboard);
+
+var _Image = __webpack_require__(52);
+
+var _Image2 = _interopRequireDefault(_Image);
+
+var _RedBox = __webpack_require__(50);
+
+var _RedBox2 = _interopRequireDefault(_RedBox);
+
+var _Svg = __webpack_require__(101);
+
+var _Svg2 = _interopRequireDefault(_Svg);
+
+var _View = __webpack_require__(31);
+
+var _View2 = _interopRequireDefault(_View);
+
+var _Text = __webpack_require__(51);
+
+var _Text2 = _interopRequireDefault(_Text);
+
+var _TextStyles = __webpack_require__(44);
+
+var _TextStyles2 = _interopRequireDefault(_TextStyles);
+
+var _symbol = __webpack_require__(22);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = {
+  render: _render.render,
+  renderToJSON: _render.renderToJSON,
+  StyleSheet: _stylesheet2.default,
+  Document: _Document2.default,
+  Page: _Page2.default,
+  Artboard: _Artboard2.default,
+  Image: _Image2.default,
+  RedBox: _RedBox2.default,
+  Svg: _Svg2.default,
+  Text: _Text2.default,
+  TextStyles: _TextStyles2.default,
+  View: _View2.default,
+  Platform: _Platform2.default,
+  makeSymbol: _symbol.makeSymbol,
+  getSymbolComponentByName: _symbol.getSymbolComponentByName,
+  injectSymbols: _symbol.injectSymbols
+};
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1336,82 +1412,6 @@ function makeSvgLayer(layout, name, svg) {
   };
   return encodeSketchJSON(svgLayer);
 }
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _render = __webpack_require__(33);
-
-var _Platform = __webpack_require__(95);
-
-var _Platform2 = _interopRequireDefault(_Platform);
-
-var _stylesheet = __webpack_require__(9);
-
-var _stylesheet2 = _interopRequireDefault(_stylesheet);
-
-var _Document = __webpack_require__(96);
-
-var _Document2 = _interopRequireDefault(_Document);
-
-var _Page = __webpack_require__(97);
-
-var _Page2 = _interopRequireDefault(_Page);
-
-var _Artboard = __webpack_require__(99);
-
-var _Artboard2 = _interopRequireDefault(_Artboard);
-
-var _Image = __webpack_require__(51);
-
-var _Image2 = _interopRequireDefault(_Image);
-
-var _RedBox = __webpack_require__(49);
-
-var _RedBox2 = _interopRequireDefault(_RedBox);
-
-var _Svg = __webpack_require__(101);
-
-var _Svg2 = _interopRequireDefault(_Svg);
-
-var _View = __webpack_require__(31);
-
-var _View2 = _interopRequireDefault(_View);
-
-var _Text = __webpack_require__(50);
-
-var _Text2 = _interopRequireDefault(_Text);
-
-var _TextStyles = __webpack_require__(43);
-
-var _TextStyles2 = _interopRequireDefault(_TextStyles);
-
-var _symbol = __webpack_require__(22);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = {
-  render: _render.render,
-  renderToJSON: _render.renderToJSON,
-  StyleSheet: _stylesheet2.default,
-  Document: _Document2.default,
-  Page: _Page2.default,
-  Artboard: _Artboard2.default,
-  Image: _Image2.default,
-  RedBox: _RedBox2.default,
-  Svg: _Svg2.default,
-  Text: _Text2.default,
-  TextStyles: _TextStyles2.default,
-  View: _View2.default,
-  Platform: _Platform2.default,
-  makeSymbol: _symbol.makeSymbol,
-  getSymbolComponentByName: _symbol.getSymbolComponentByName,
-  injectSymbols: _symbol.injectSymbols
-};
 
 /***/ }),
 /* 8 */
@@ -2281,19 +2281,19 @@ var _ViewStylePropTypes = __webpack_require__(17);
 
 var _ViewStylePropTypes2 = _interopRequireDefault(_ViewStylePropTypes);
 
-var _buildTree = __webpack_require__(34);
+var _buildTree = __webpack_require__(35);
 
 var _buildTree2 = _interopRequireDefault(_buildTree);
 
-var _flexToSketchJSON = __webpack_require__(39);
+var _flexToSketchJSON = __webpack_require__(40);
 
 var _flexToSketchJSON2 = _interopRequireDefault(_flexToSketchJSON);
 
-var _render = __webpack_require__(33);
+var _render = __webpack_require__(34);
 
-var _resets = __webpack_require__(44);
+var _resets = __webpack_require__(45);
 
-var _getDocument = __webpack_require__(47);
+var _getDocument = __webpack_require__(48);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2750,7 +2750,7 @@ exports.makeShapeGroup = exports.makeRectShapeLayer = exports.makeShapePath = ex
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
 
-var _hacksForJSONImpl = __webpack_require__(6);
+var _hacksForJSONImpl = __webpack_require__(7);
 
 var _models = __webpack_require__(4);
 
@@ -3050,10 +3050,17 @@ module.exports = View;
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/Label.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Label=function Label(_ref){var bold=_ref.bold,children=_ref.children;return _react2.default.createElement(_reactSketchapp.Text,{style:{color:"#333",fontWeight:bold?"bold":"normal",fontSize:16,lineHeight:24},__source:{fileName:_jsxFileName,lineNumber:5}},children);};exports.default=Label;module.exports=exports["default"];
+/* WEBPACK VAR INJECTION */(function(console) {Object.defineProperty(exports,"__esModule",{value:true});exports.Provider=exports.ThemeContext=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/components/Theme/index.js";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();exports.withTheme=withTheme;var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _propTypes=__webpack_require__(1);var _propTypes2=_interopRequireDefault(_propTypes);var _reactNative=__webpack_require__(6);var _branding_defaults=__webpack_require__(55);var _branding_defaults2=_interopRequireDefault(_branding_defaults);var _isObj=__webpack_require__(128);var _isObj2=_interopRequireDefault(_isObj);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var ThemeContext=exports.ThemeContext=_react2.default.createContext({theme:{}});var Provider=exports.Provider=function(_Component){_inherits(Provider,_Component);function Provider(props){_classCallCheck(this,Provider);var _this=_possibleConstructorReturn(this,(Provider.__proto__||Object.getPrototypeOf(Provider)).call(this,props));_this.themeConfigs={};_this.branding=_branding_defaults2.default;_this.updateThemeConfig=function(name,themeConfig){if(_this.props.theme&&_this.props.theme[name])themeConfig=mergeDeep(themeConfig,_this.props.theme[name]);themeConfig=JSON.parse(JSON.stringify(themeConfig).replace(/@([\w_-]+)/gm,function(match,key){return _this.branding[key];}));return _this.themeConfigs[name]={computedStyle:themeConfig.style?_reactNative.StyleSheet.create(themeConfig.style):{},props:themeConfig.props};};if(props.branding){_this.branding=mergeDeep(_this.branding,props.branding);}return _this;}_createClass(Provider,[{key:"render",value:function render(){return _react2.default.createElement(ThemeContext.Provider,{value:{theme:this.themeConfigs,updateThemeConfig:this.updateThemeConfig},__source:{fileName:_jsxFileName,lineNumber:46}},this.props.children);}}]);return Provider;}(_react.Component);function withTheme(componentName,ThemedComponent){var _class,_temp;var propTypes=_extends({},ThemedComponent.propTypes);delete propTypes.theme;return _temp=_class=function(_React$Component){_inherits(_class,_React$Component);function _class(){_classCallCheck(this,_class);var _this2=_possibleConstructorReturn(this,(_class.__proto__||Object.getPrototypeOf(_class)).call(this));try{if(ThemeContext._currentValue.updateThemeConfig){ThemeContext._currentValue.updateThemeConfig(componentName,ThemedComponent.themeConfig);}}catch(e){console.warn("failed to update theme for "+componentName,e);}return _this2;}_createClass(_class,[{key:"render",value:function render(){var _this3=this;return _react2.default.createElement(ThemeContext.Consumer,{__source:{fileName:_jsxFileName,lineNumber:88}},function(_ref){var theme=_ref.theme;var computedTheme=(theme[componentName]||{}).computedStyle||{};var fullTheme=_this3.props.theme?mergeDeep({},computedTheme,_this3.props.theme):computedTheme;return _react2.default.createElement(ThemedComponent,_extends({},(theme[componentName]||{}).props||{},_this3.props,{theme:fullTheme,__source:{fileName:_jsxFileName,lineNumber:98}}));});}}]);return _class;}(_react2.default.Component),_class.displayName=componentName,_class.propTypes=_extends({},propTypes),_class.defaultProps=_extends({},ThemedComponent.defaultProps),_temp;}function mergeDeep(target){for(var _len=arguments.length,sources=Array(_len>1?_len-1:0),_key=1;_key<_len;_key++){sources[_key-1]=arguments[_key];}if(!sources.length)return target;var source=sources.shift();if((0,_isObj2.default)(target)&&(0,_isObj2.default)(source)){for(var key in source){if((0,_isObj2.default)(source[key])){if(!target[key])_extends(target,_defineProperty({},key,{}));mergeDeep(target[key],source[key]);}else{_extends(target,_defineProperty({},key,source[key]));}}}return mergeDeep.apply(undefined,[target].concat(sources));}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
 /* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/Label.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(6);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Label=function Label(_ref){var bold=_ref.bold,children=_ref.children;return _react2.default.createElement(_reactSketchapp.Text,{style:{color:"#333",fontWeight:bold?"bold":"normal",fontSize:16,lineHeight:24},__source:{fileName:_jsxFileName,lineNumber:5}},children);};exports.default=Label;module.exports=exports["default"];
+
+/***/ }),
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3070,29 +3077,29 @@ var _react2 = _interopRequireDefault(_react);
 
 var _sketchappJsonPlugin = __webpack_require__(15);
 
-var _buildTree = __webpack_require__(34);
+var _buildTree = __webpack_require__(35);
 
 var _buildTree2 = _interopRequireDefault(_buildTree);
 
-var _flexToSketchJSON = __webpack_require__(39);
+var _flexToSketchJSON = __webpack_require__(40);
 
 var _flexToSketchJSON2 = _interopRequireDefault(_flexToSketchJSON);
 
-var _resets = __webpack_require__(44);
+var _resets = __webpack_require__(45);
 
 var _symbol = __webpack_require__(22);
 
-var _RedBox = __webpack_require__(49);
+var _RedBox = __webpack_require__(50);
 
 var _RedBox2 = _interopRequireDefault(_RedBox);
 
-var _getDocument = __webpack_require__(47);
+var _getDocument = __webpack_require__(48);
 
-var _isNativeDocument = __webpack_require__(45);
+var _isNativeDocument = __webpack_require__(46);
 
 var _isNativeDocument2 = _interopRequireDefault(_isNativeDocument);
 
-var _isNativeSymbolsPage = __webpack_require__(46);
+var _isNativeSymbolsPage = __webpack_require__(47);
 
 var _isNativeSymbolsPage2 = _interopRequireDefault(_isNativeSymbolsPage);
 
@@ -3193,7 +3200,7 @@ var render = exports.render = function render(element, container) {
 };
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3230,13 +3237,13 @@ var _computeYogaTree = __webpack_require__(69);
 
 var _computeYogaTree2 = _interopRequireDefault(_computeYogaTree);
 
-var _computeTextTree = __webpack_require__(38);
+var _computeTextTree = __webpack_require__(39);
 
 var _computeTextTree2 = _interopRequireDefault(_computeTextTree);
 
 var _constants = __webpack_require__(10);
 
-var _zIndex = __webpack_require__(48);
+var _zIndex = __webpack_require__(49);
 
 var _zIndex2 = _interopRequireDefault(_zIndex);
 
@@ -3315,7 +3322,7 @@ var buildTree = function buildTree(element) {
 exports.default = buildTree;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3386,7 +3393,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/* globals coscript */
@@ -3435,7 +3442,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)))
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3465,7 +3472,7 @@ var hashStyle = function hashStyle(obj) {
 exports.default = hashStyle;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3525,7 +3532,7 @@ var computeTextTree = function computeTextTree(node, context) {
 exports.default = computeTextTree;
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3587,7 +3594,7 @@ var flexToSketchJSON = function flexToSketchJSON(node) {
 exports.default = flexToSketchJSON;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3692,7 +3699,7 @@ var makeHorizontalBorder = exports.makeHorizontalBorder = function makeHorizonta
 };
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3708,7 +3715,7 @@ var same = function same(a, b, c, d) {
 exports.default = same;
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3726,13 +3733,13 @@ var _models = __webpack_require__(4);
 
 var _shapeLayers = __webpack_require__(29);
 
-var _style = __webpack_require__(40);
+var _style = __webpack_require__(41);
 
 var _hasAnyDefined = __webpack_require__(21);
 
 var _hasAnyDefined2 = _interopRequireDefault(_hasAnyDefined);
 
-var _same = __webpack_require__(41);
+var _same = __webpack_require__(42);
 
 var _same2 = _interopRequireDefault(_same);
 
@@ -3923,7 +3930,7 @@ var ViewRenderer = function (_SketchRenderer) {
 module.exports = ViewRenderer;
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3939,7 +3946,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _sketchappJsonPlugin = __webpack_require__(15);
 
-var _hashStyle = __webpack_require__(37);
+var _hashStyle = __webpack_require__(38);
 
 var _hashStyle2 = _interopRequireDefault(_hashStyle);
 
@@ -3947,7 +3954,7 @@ var _sharedTextStyles = __webpack_require__(89);
 
 var _sharedTextStyles2 = _interopRequireDefault(_sharedTextStyles);
 
-var _hacksForJSONImpl = __webpack_require__(6);
+var _hacksForJSONImpl = __webpack_require__(7);
 
 var _pick = __webpack_require__(28);
 
@@ -4036,7 +4043,7 @@ var TextStyles = {
 exports.default = TextStyles;
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4047,11 +4054,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.resetDocument = exports.resetLayer = undefined;
 
-var _isNativeDocument = __webpack_require__(45);
+var _isNativeDocument = __webpack_require__(46);
 
 var _isNativeDocument2 = _interopRequireDefault(_isNativeDocument);
 
-var _isNativeSymbolsPage = __webpack_require__(46);
+var _isNativeSymbolsPage = __webpack_require__(47);
 
 var _isNativeSymbolsPage2 = _interopRequireDefault(_isNativeSymbolsPage);
 
@@ -4089,7 +4096,7 @@ var resetDocument = exports.resetDocument = function resetDocument(document) {
 };
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4104,7 +4111,7 @@ exports.default = function (container) {
 };
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4122,7 +4129,7 @@ var isNativeSymbolsPage = function isNativeSymbolsPage(layer) {
 exports.default = isNativeSymbolsPage;
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4144,7 +4151,7 @@ var getDocumentFromContainer = exports.getDocumentFromContainer = function getDo
 };
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4171,7 +4178,7 @@ var zIndex = function zIndex(nodes) {
 exports.default = zIndex;
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4195,7 +4202,7 @@ var _errorStackParser = __webpack_require__(92);
 
 var _errorStackParser2 = _interopRequireDefault(_errorStackParser);
 
-var _Text = __webpack_require__(50);
+var _Text = __webpack_require__(51);
 
 var _Text2 = _interopRequireDefault(_Text);
 
@@ -4339,7 +4346,7 @@ RedBox.propTypes = propTypes;
 exports.default = RedBox;
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4430,7 +4437,7 @@ Text.propTypes = propTypes;
 module.exports = Text;
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4461,7 +4468,7 @@ var _ResizingConstraintPropTypes = __webpack_require__(30);
 
 var _ResizingConstraintPropTypes2 = _interopRequireDefault(_ResizingConstraintPropTypes);
 
-var _ResizeModePropTypes = __webpack_require__(52);
+var _ResizeModePropTypes = __webpack_require__(53);
 
 var _ResizeModePropTypes2 = _interopRequireDefault(_ResizeModePropTypes);
 
@@ -4572,7 +4579,7 @@ Image.propTypes = propTypes;
 exports.default = Image;
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4591,7 +4598,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _propTypes2.default.oneOf(['contain', 'cover', 'stretch', 'center', 'repeat', 'none']);
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4662,23 +4669,16 @@ module.exports = (_temp = _class = function (_React$Component) {
 }, _temp);
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports) {
 
 Object.defineProperty(exports,"__esModule",{value:true});exports.default={textColor:"#000",accentColor:"red",alternateTextColor:"#fff",linkColor:"#7945ef",disabledColor:"#f9f9fa",disabledDarkColor:"#b1b2c1",successLightColor:"#e9f9f0",successColor:"#20cd68",passiveSuccessLightColor:"#d5dff7",passiveSuccessColor:"#2f61d5",dangerLightColor:"#ffe2dc",dangerColor:"#ff7052",primaryLightColor:"#e3d9fc",primaryColor:"#7540ee"};module.exports=exports["default"];
 
 /***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(console) {Object.defineProperty(exports,"__esModule",{value:true});exports.Provider=exports.ThemeContext=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/components/Theme/index.js";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();exports.withTheme=withTheme;var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _propTypes=__webpack_require__(1);var _propTypes2=_interopRequireDefault(_propTypes);var _reactNative=__webpack_require__(7);var _branding_defaults=__webpack_require__(54);var _branding_defaults2=_interopRequireDefault(_branding_defaults);var _isObj=__webpack_require__(127);var _isObj2=_interopRequireDefault(_isObj);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var ThemeContext=exports.ThemeContext=_react2.default.createContext({theme:{}});var Provider=exports.Provider=function(_Component){_inherits(Provider,_Component);function Provider(props){_classCallCheck(this,Provider);var _this=_possibleConstructorReturn(this,(Provider.__proto__||Object.getPrototypeOf(Provider)).call(this,props));_this.themeConfigs={};_this.branding=_branding_defaults2.default;_this.updateThemeConfig=function(name,themeConfig){if(_this.props.theme&&_this.props.theme[name])themeConfig=mergeDeep(themeConfig,_this.props.theme[name]);themeConfig=JSON.parse(JSON.stringify(themeConfig).replace(/@([\w_-]+)/gm,function(match,key){return _this.branding[key];}));return _this.themeConfigs[name]={computedStyle:themeConfig.style?_reactNative.StyleSheet.create(themeConfig.style):{},props:themeConfig.props};};if(props.branding){_this.branding=mergeDeep(_this.branding,props.branding);}return _this;}_createClass(Provider,[{key:"render",value:function render(){return _react2.default.createElement(ThemeContext.Provider,{value:{theme:this.themeConfigs,updateThemeConfig:this.updateThemeConfig},__source:{fileName:_jsxFileName,lineNumber:46}},this.props.children);}}]);return Provider;}(_react.Component);function withTheme(componentName,ThemedComponent){var _class,_temp;var propTypes=_extends({},ThemedComponent.propTypes);delete propTypes.theme;return _temp=_class=function(_React$Component){_inherits(_class,_React$Component);function _class(){_classCallCheck(this,_class);var _this2=_possibleConstructorReturn(this,(_class.__proto__||Object.getPrototypeOf(_class)).call(this));try{if(ThemeContext._currentValue.updateThemeConfig){ThemeContext._currentValue.updateThemeConfig(componentName,ThemedComponent.themeConfig);}}catch(e){console.warn("failed to update theme for "+componentName,e);}return _this2;}_createClass(_class,[{key:"render",value:function render(){var _this3=this;return _react2.default.createElement(ThemeContext.Consumer,{__source:{fileName:_jsxFileName,lineNumber:88}},function(_ref){var theme=_ref.theme;var computedTheme=(theme[componentName]||{}).computedStyle||{};var fullTheme=_this3.props.theme?mergeDeep({},computedTheme,_this3.props.theme):computedTheme;return _react2.default.createElement(ThemedComponent,_extends({},(theme[componentName]||{}).props||{},_this3.props,{theme:fullTheme,__source:{fileName:_jsxFileName,lineNumber:98}}));});}}]);return _class;}(_react2.default.Component),_class.displayName=componentName,_class.propTypes=_extends({},propTypes),_class.defaultProps=_extends({},ThemedComponent.defaultProps),_temp;}function mergeDeep(target){for(var _len=arguments.length,sources=Array(_len>1?_len-1:0),_key=1;_key<_len;_key++){sources[_key-1]=arguments[_key];}if(!sources.length)return target;var source=sources.shift();if((0,_isObj2.default)(target)&&(0,_isObj2.default)(source)){for(var key in source){if((0,_isObj2.default)(source[key])){if(!target[key])_extends(target,_defineProperty({},key,{}));mergeDeep(target[key],source[key]);}else{_extends(target,_defineProperty({},key,source[key]));}}}return mergeDeep.apply(undefined,[target].concat(sources));}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
-
-/***/ }),
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/sketch-library.js";exports.generateLibrary=generateLibrary;exports.renderLibrary=renderLibrary;var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);var _designSystem=__webpack_require__(122);var _designSystem2=_interopRequireDefault(_designSystem);var _exposeSymbols=__webpack_require__(123);var _exposeSymbols2=_interopRequireDefault(_exposeSymbols);var _Label=__webpack_require__(32);var _Label2=_interopRequireDefault(_Label);var _palette=__webpack_require__(128);var _palette2=_interopRequireDefault(_palette);var _section=__webpack_require__(130);var _section2=_interopRequireDefault(_section);var _sketchUtils=__webpack_require__(131);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SketchDocument=function SketchDocument(_ref){var system=_ref.system;return _react2.default.createElement(_react2.default.Fragment,{__source:{fileName:_jsxFileName,lineNumber:23}},_react2.default.createElement(_reactSketchapp.Page,{name:"Branding",__source:{fileName:_jsxFileName,lineNumber:24}},_react2.default.createElement(_reactSketchapp.View,{__source:{fileName:_jsxFileName,lineNumber:25}},_react2.default.createElement(_reactSketchapp.View,{name:"Intro",style:{width:420,marginBottom:34},__source:{fileName:_jsxFileName,lineNumber:26}},_react2.default.createElement(_Label2.default,{__source:{fileName:_jsxFileName,lineNumber:27}},"This is an example react-sketchapp document, showing how to render a styleguide from a data representation of your design system.")),_react2.default.createElement(_section2.default,{title:"Color Palette",__source:{fileName:_jsxFileName,lineNumber:33}},_react2.default.createElement(_palette2.default,{colors:system.colors,__source:{fileName:_jsxFileName,lineNumber:34}})))));};function generateLibrary(context){var document=(0,_sketchUtils.createNewDocument)(context);context.document=document;renderLibrary(context);var path=(0,_sketchUtils.getStoragePath)(context);(0,_sketchUtils.saveDocument)(document,path);(0,_sketchUtils.closeDocument)(document);(0,_sketchUtils.addLibrary)(path);context.document.showMessage("Library added! 🙌");}function renderLibrary(context){(0,_exposeSymbols2.default)();(0,_reactSketchapp.render)(_react2.default.createElement(SketchDocument,{system:_designSystem2.default,__source:{fileName:_jsxFileName,lineNumber:57}}),context.document.pages()[0]);}
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/sketch-library.js";exports.generateLibrary=generateLibrary;exports.renderLibrary=renderLibrary;var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(6);var _designSystem=__webpack_require__(122);var _designSystem2=_interopRequireDefault(_designSystem);var _exposeSymbols=__webpack_require__(123);var _exposeSymbols2=_interopRequireDefault(_exposeSymbols);var _Label=__webpack_require__(33);var _Label2=_interopRequireDefault(_Label);var _palette=__webpack_require__(129);var _palette2=_interopRequireDefault(_palette);var _section=__webpack_require__(131);var _section2=_interopRequireDefault(_section);var _sketchUtils=__webpack_require__(132);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SketchDocument=function SketchDocument(_ref){var system=_ref.system;return _react2.default.createElement(_react2.default.Fragment,{__source:{fileName:_jsxFileName,lineNumber:23}},_react2.default.createElement(_reactSketchapp.Page,{name:"Branding",__source:{fileName:_jsxFileName,lineNumber:24}},_react2.default.createElement(_reactSketchapp.View,{__source:{fileName:_jsxFileName,lineNumber:25}},_react2.default.createElement(_reactSketchapp.View,{name:"Intro",style:{width:420,marginBottom:34},__source:{fileName:_jsxFileName,lineNumber:26}},_react2.default.createElement(_Label2.default,{__source:{fileName:_jsxFileName,lineNumber:27}},"This is an example react-sketchapp document, showing how to render a styleguide from a data representation of your design system.")),_react2.default.createElement(_section2.default,{title:"Color Palette",__source:{fileName:_jsxFileName,lineNumber:33}},_react2.default.createElement(_palette2.default,{colors:system.colors,__source:{fileName:_jsxFileName,lineNumber:34}})))));};function generateLibrary(context){var document=(0,_sketchUtils.createNewDocument)(context);context.document=document;renderLibrary(context);var path=(0,_sketchUtils.getStoragePath)(context);(0,_sketchUtils.saveDocument)(document,path);(0,_sketchUtils.closeDocument)(document);(0,_sketchUtils.addLibrary)(path);context.document.showMessage("Library added! 🙌");}function renderLibrary(context){(0,_exposeSymbols2.default)();(0,_reactSketchapp.render)(_react2.default.createElement(SketchDocument,{system:_designSystem2.default,__source:{fileName:_jsxFileName,lineNumber:57}}),context.document.pages()[0]);}
 
 /***/ }),
 /* 57 */
@@ -6160,7 +6160,7 @@ if (process.env.NODE_ENV === 'production') {
  * LICENSE file in the root directory of this source tree.
  */
 
-var aa=__webpack_require__(8),ba=__webpack_require__(13),ca=__webpack_require__(0),m=__webpack_require__(19),da=__webpack_require__(35);function n(a){for(var b=arguments.length-1,d="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)d+="&args[]="+encodeURIComponent(arguments[c+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",d)}
+var aa=__webpack_require__(8),ba=__webpack_require__(13),ca=__webpack_require__(0),m=__webpack_require__(19),da=__webpack_require__(36);function n(a){for(var b=arguments.length-1,d="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=0;c<b;c++)d+="&args[]="+encodeURIComponent(arguments[c+1]);aa(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",d)}
 var ea=ca.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,x="function"===typeof Symbol&&Symbol.for,fa=x?Symbol.for("react.element"):60103,ha=x?Symbol.for("react.portal"):60106,y=x?Symbol.for("react.fragment"):60107,ja=x?Symbol.for("react.strict_mode"):60108,ka=x?Symbol.for("react.profiler"):60114,la=x?Symbol.for("react.provider"):60109,ma=x?Symbol.for("react.context"):60110,na=x?Symbol.for("react.async_mode"):60111,oa=x?Symbol.for("react.forward_ref"):60112,pa=x?Symbol.for("react.timeout"):
 60113,qa="function"===typeof Symbol&&Symbol.iterator;function ra(a){if(null===a||"undefined"===typeof a)return null;a=qa&&a[qa]||a["@@iterator"];return"function"===typeof a?a:null}
 function sa(a){var b=a.type;if("function"===typeof b)return b.displayName||b.name;if("string"===typeof b)return b;switch(b){case na:return"AsyncMode";case ma:return"Context.Consumer";case y:return"ReactFragment";case ha:return"ReactPortal";case ka:return"Profiler("+a.pendingProps.id+")";case la:return"Context.Provider";case ja:return"StrictMode";case pa:return"Timeout"}if("object"===typeof b&&null!==b)switch(b.$$typeof){case oa:return a=b.render.displayName||b.render.name||"",""!==a?"ForwardRef("+
@@ -6302,7 +6302,7 @@ var warning = __webpack_require__(20);
 var React = __webpack_require__(0);
 var emptyObject = __webpack_require__(19);
 var checkPropTypes = __webpack_require__(23);
-var shallowEqual = __webpack_require__(35);
+var shallowEqual = __webpack_require__(36);
 
 // Relying on the `invariant()` implementation lets us
 // have preserve the format and params in the www builds.
@@ -25789,7 +25789,7 @@ module.exports = CONSTANTS;
   }run();
 });
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(5), __webpack_require__(36)["clearInterval"], __webpack_require__(12)["setTimeout"], __webpack_require__(36)["setInterval"], __webpack_require__(65).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(5), __webpack_require__(37)["clearInterval"], __webpack_require__(12)["setTimeout"], __webpack_require__(37)["setInterval"], __webpack_require__(65).Buffer))
 
 /***/ }),
 /* 65 */
@@ -27870,7 +27870,7 @@ var _Context = __webpack_require__(27);
 
 var _Context2 = _interopRequireDefault(_Context);
 
-var _zIndex = __webpack_require__(48);
+var _zIndex = __webpack_require__(49);
 
 var _zIndex2 = _interopRequireDefault(_zIndex);
 
@@ -27942,7 +27942,7 @@ var _pick = __webpack_require__(28);
 
 var _pick2 = _interopRequireDefault(_pick);
 
-var _computeTextTree = __webpack_require__(38);
+var _computeTextTree = __webpack_require__(39);
 
 var _computeTextTree2 = _interopRequireDefault(_computeTextTree);
 
@@ -28306,7 +28306,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _hacksForJSONImpl = __webpack_require__(6);
+var _hacksForJSONImpl = __webpack_require__(7);
 
 // TODO(lmr): do something more sensible here
 var FLOAT_MAX = 999999;
@@ -28355,7 +28355,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _types = __webpack_require__(73);
 
-var _hashStyle = __webpack_require__(37);
+var _hashStyle = __webpack_require__(38);
 
 var _hashStyle2 = _interopRequireDefault(_hashStyle);
 
@@ -29792,7 +29792,7 @@ var renderers = {
   image: __webpack_require__(85),
   svg: __webpack_require__(86),
   text: __webpack_require__(87),
-  view: __webpack_require__(42),
+  view: __webpack_require__(43),
   symbolinstance: __webpack_require__(90),
   symbolmaster: __webpack_require__(91)
 };
@@ -29870,7 +29870,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _hacksForJSONImpl = __webpack_require__(6);
+var _hacksForJSONImpl = __webpack_require__(7);
 
 var _models = __webpack_require__(4);
 
@@ -29932,19 +29932,19 @@ var _SketchRenderer2 = __webpack_require__(11);
 
 var _SketchRenderer3 = _interopRequireDefault(_SketchRenderer2);
 
-var _hacksForJSONImpl = __webpack_require__(6);
+var _hacksForJSONImpl = __webpack_require__(7);
 
 var _models = __webpack_require__(4);
 
 var _shapeLayers = __webpack_require__(29);
 
-var _style = __webpack_require__(40);
+var _style = __webpack_require__(41);
 
 var _hasAnyDefined = __webpack_require__(21);
 
 var _hasAnyDefined2 = _interopRequireDefault(_hasAnyDefined);
 
-var _same = __webpack_require__(41);
+var _same = __webpack_require__(42);
 
 var _same2 = _interopRequireDefault(_same);
 
@@ -30135,11 +30135,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _ViewRenderer2 = __webpack_require__(42);
+var _ViewRenderer2 = __webpack_require__(43);
 
 var _ViewRenderer3 = _interopRequireDefault(_ViewRenderer2);
 
-var _hacksForJSONImpl = __webpack_require__(6);
+var _hacksForJSONImpl = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30262,7 +30262,7 @@ var _textLayers2 = _interopRequireDefault(_textLayers);
 
 var _models = __webpack_require__(4);
 
-var _TextStyles = __webpack_require__(43);
+var _TextStyles = __webpack_require__(44);
 
 var _TextStyles2 = _interopRequireDefault(_TextStyles);
 
@@ -30337,7 +30337,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _hacksForJSONImpl = __webpack_require__(6);
+var _hacksForJSONImpl = __webpack_require__(7);
 
 var _models = __webpack_require__(4);
 
@@ -30469,7 +30469,7 @@ var _models = __webpack_require__(4);
 
 var _symbol = __webpack_require__(22);
 
-var _hacksForJSONImpl = __webpack_require__(6);
+var _hacksForJSONImpl = __webpack_require__(7);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31289,7 +31289,7 @@ var _ViewStylePropTypes = __webpack_require__(17);
 
 var _ViewStylePropTypes2 = _interopRequireDefault(_ViewStylePropTypes);
 
-var _ResizeModePropTypes = __webpack_require__(52);
+var _ResizeModePropTypes = __webpack_require__(53);
 
 var _ResizeModePropTypes2 = _interopRequireDefault(_ResizeModePropTypes);
 
@@ -31306,9 +31306,9 @@ exports.default = _extends({}, _ViewStylePropTypes2.default, {
 "use strict";
 
 
-module.exports = __webpack_require__(53);
+module.exports = __webpack_require__(54);
 
-module.exports.Svg = __webpack_require__(53);
+module.exports.Svg = __webpack_require__(54);
 module.exports.Circle = __webpack_require__(102);
 module.exports.ClipPath = __webpack_require__(103);
 module.exports.Defs = __webpack_require__(104);
@@ -31640,7 +31640,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Image = __webpack_require__(51);
+var _Image = __webpack_require__(52);
 
 var _Image2 = _interopRequireDefault(_Image);
 
@@ -32659,13 +32659,13 @@ module.exports = (_temp = _class = function (_React$Component) {
 /* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});exports.colors=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _branding_defaults=__webpack_require__(54);var _branding_defaults2=_interopRequireDefault(_branding_defaults);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var colors=exports.colors=_branding_defaults2.default;exports.default={colors:Object.keys(colors).reduce(function(acc,name){return _extends({},acc,_defineProperty({},name,{hex:colors[name],contrast:1,accessibility:{aa:true,aaLarge:true,aaa:true,aaaLarge:true}}));},{})};
+Object.defineProperty(exports,"__esModule",{value:true});exports.colors=undefined;var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _branding_defaults=__webpack_require__(55);var _branding_defaults2=_interopRequireDefault(_branding_defaults);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var colors=exports.colors=_branding_defaults2.default;exports.default={colors:Object.keys(colors).reduce(function(acc,name){return _extends({},acc,_defineProperty({},name,{hex:colors[name],contrast:1,accessibility:{aa:true,aaLarge:true,aaa:true,aaaLarge:true}}));},{})};
 
 /***/ }),
 /* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/exposeSymbols.js";exports.default=function(){var req=__webpack_require__(124);req.keys().forEach(function(filename){var sketchComponent=req(filename);(0,_reactSketchapp.makeSymbol)(function(){return _react2.default.createElement(_Theme.Provider,{__source:{fileName:_jsxFileName,lineNumber:13}},_react2.default.createElement(sketchComponent.Component,{__source:{fileName:_jsxFileName,lineNumber:14}}));},sketchComponent.name);});};var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);var _Theme=__webpack_require__(55);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}module.exports=exports["default"];
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/exposeSymbols.js";exports.default=function(){var req=__webpack_require__(124);req.keys().forEach(function(filename){var sketchComponent=req(filename);(0,_reactSketchapp.makeSymbol)(function(){return _react2.default.createElement(_Theme.Provider,{__source:{fileName:_jsxFileName,lineNumber:13}},_react2.default.createElement(sketchComponent.Component,{__source:{fileName:_jsxFileName,lineNumber:14}}));},sketchComponent.name);});};var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(6);var _Theme=__webpack_require__(32);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}module.exports=exports["default"];
 
 /***/ }),
 /* 124 */
@@ -32700,10 +32700,16 @@ Object.defineProperty(exports,"__esModule",{value:true});exports.name=exports.Co
 /* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/components/Badge/index.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _propTypes=__webpack_require__(1);var _propTypes2=_interopRequireDefault(_propTypes);var _reactNative=__webpack_require__(7);var _Theme=__webpack_require__(55);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Badge=function Badge(props){var color=props.color,style=props.style,textStyle=props.textStyle,value=props.value,theme=props.theme;return _react2.default.createElement(_reactNative.View,{style:theme.container,__source:{fileName:_jsxFileName,lineNumber:10}},_react2.default.createElement(_reactNative.View,{style:[theme.base,color?{backgroundColor:color}:{},style],__source:{fileName:_jsxFileName,lineNumber:11}},_react2.default.createElement(_reactNative.Text,{style:[theme.text,textStyle],__source:{fileName:_jsxFileName,lineNumber:14}},value)));};Badge.themeConfig={style:{container:{flexDirection:"row"},base:{padding:10,paddingVertical:4,backgroundColor:"@accentColor",borderRadius:20,minWidth:40},text:{fontSize:12,color:"#fff",textAlign:"center"}}};Badge.propTypes={color:_propTypes2.default.string,style:_propTypes2.default.oneOfType([_propTypes2.default.object,_propTypes2.default.array]),textStyle:_propTypes2.default.oneOfType([_propTypes2.default.object,_propTypes2.default.array]),value:_propTypes2.default.oneOfType([_propTypes2.default.string,_propTypes2.default.number]).isRequired,theme:_propTypes2.default.object};exports.default=(0,_Theme.withTheme)("Badge",Badge);module.exports=exports["default"];
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/components/Badge/index.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _propTypes=__webpack_require__(1);var _propTypes2=_interopRequireDefault(_propTypes);var _reactNative=__webpack_require__(6);var _Text=__webpack_require__(127);var _Text2=_interopRequireDefault(_Text);var _Theme=__webpack_require__(32);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Badge=function Badge(props){var color=props.color,style=props.style,textStyle=props.textStyle,value=props.value,theme=props.theme;return _react2.default.createElement(_reactNative.View,{style:theme.container,__source:{fileName:_jsxFileName,lineNumber:11}},_react2.default.createElement(_reactNative.View,{style:[theme.base,color?{backgroundColor:color}:{},style],__source:{fileName:_jsxFileName,lineNumber:12}},_react2.default.createElement(_Text2.default,{style:[theme.text,textStyle],__source:{fileName:_jsxFileName,lineNumber:15}},value)));};Badge.themeConfig={style:{container:{flexDirection:"row"},base:{padding:10,paddingVertical:4,backgroundColor:"@accentColor",borderRadius:20,minWidth:40},text:{paddingVertical:0,fontSize:12,color:"#fff",textAlign:"center"}}};Badge.propTypes={color:_propTypes2.default.string,style:_propTypes2.default.oneOfType([_propTypes2.default.object,_propTypes2.default.array]),textStyle:_propTypes2.default.oneOfType([_propTypes2.default.object,_propTypes2.default.array]),value:_propTypes2.default.oneOfType([_propTypes2.default.string,_propTypes2.default.number]).isRequired,theme:_propTypes2.default.object};exports.default=(0,_Theme.withTheme)("Badge",Badge);module.exports=exports["default"];
 
 /***/ }),
 /* 127 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/components/typography/Text.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _propTypes=__webpack_require__(1);var _propTypes2=_interopRequireDefault(_propTypes);var _reactNative=__webpack_require__(6);var _Theme=__webpack_require__(32);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}var Text=function Text(props){var theme=props.theme;var textProps=_objectWithoutProperties(props,[]);if(textProps.style){textProps.style=_reactNative.StyleSheet.flatten(textProps.style);}textProps.style=[theme.base,{textAlign:props.align},textProps.style];delete textProps.theme;delete textProps.align;return _react2.default.createElement(_reactNative.Text,_extends({},textProps,{__source:{fileName:_jsxFileName,lineNumber:19}}));};Text.themeConfig={style:{base:{fontFamily:"Helvetica",fontSize:14,fontWeight:"200",fontStyle:"normal",color:"@textColor",paddingVertical:10,textAlign:"left"}}};Text.propTypes={align:_propTypes2.default.string,style:_propTypes2.default.oneOfType([_propTypes2.default.object,_propTypes2.default.array,_propTypes2.default.number]),theme:_propTypes2.default.object.isRequired};Text.defaultProps={align:"left"};exports.default=(0,_Theme.withTheme)("Text",Text);module.exports=exports["default"];
+
+/***/ }),
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32715,25 +32721,25 @@ module.exports = function (x) {
 
 
 /***/ }),
-/* 128 */
-/***/ (function(module, exports, __webpack_require__) {
-
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/palette.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);var _swatch=__webpack_require__(129);var _swatch2=_interopRequireDefault(_swatch);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SWATCH_WIDTH=100;var Palette=function Palette(_ref){var colors=_ref.colors;return _react2.default.createElement(_reactSketchapp.View,{style:{width:(SWATCH_WIDTH+48)*4,flexWrap:"wrap",flexDirection:"row"},__source:{fileName:_jsxFileName,lineNumber:8}},Object.keys(colors).map(function(name){return _react2.default.createElement(_swatch2.default,{key:name,color:colors[name],name:name,__source:{fileName:_jsxFileName,lineNumber:16}});}));};exports.default=Palette;module.exports=exports["default"];
-
-/***/ }),
 /* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/swatch.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);var _Label=__webpack_require__(32);var _Label2=_interopRequireDefault(_Label);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SWATCH_WIDTH=100;var Swatch=function Swatch(_ref){var color=_ref.color,name=_ref.name;return _react2.default.createElement(_reactSketchapp.View,{name:name,style:{marginBottom:48,marginRight:48},__source:{fileName:_jsxFileName,lineNumber:8}},_react2.default.createElement(_reactSketchapp.View,{style:{width:SWATCH_WIDTH,height:SWATCH_WIDTH,backgroundColor:color.hex,borderRadius:4,marginBottom:8},__source:{fileName:_jsxFileName,lineNumber:9}}),_react2.default.createElement(_Label2.default,{bold:true,__source:{fileName:_jsxFileName,lineNumber:18}},name),_react2.default.createElement(_Label2.default,{__source:{fileName:_jsxFileName,lineNumber:19}},color.hex));};exports.default=Swatch;module.exports=exports["default"];
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/palette.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(6);var _swatch=__webpack_require__(130);var _swatch2=_interopRequireDefault(_swatch);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SWATCH_WIDTH=100;var Palette=function Palette(_ref){var colors=_ref.colors;return _react2.default.createElement(_reactSketchapp.View,{style:{width:(SWATCH_WIDTH+48)*4,flexWrap:"wrap",flexDirection:"row"},__source:{fileName:_jsxFileName,lineNumber:8}},Object.keys(colors).map(function(name){return _react2.default.createElement(_swatch2.default,{key:name,color:colors[name],name:name,__source:{fileName:_jsxFileName,lineNumber:16}});}));};exports.default=Palette;module.exports=exports["default"];
 
 /***/ }),
 /* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
-Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/section.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(7);var _Label=__webpack_require__(32);var _Label2=_interopRequireDefault(_Label);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Section=function Section(_ref){var title=_ref.title,children=_ref.children;return _react2.default.createElement(_reactSketchapp.View,{style:{marginBottom:96,flexDirection:"row"},__source:{fileName:_jsxFileName,lineNumber:6}},_react2.default.createElement(_reactSketchapp.View,{style:{width:200},__source:{fileName:_jsxFileName,lineNumber:7}},_react2.default.createElement(_Label2.default,{bold:true,__source:{fileName:_jsxFileName,lineNumber:8}},title)),_react2.default.createElement(_reactSketchapp.View,{__source:{fileName:_jsxFileName,lineNumber:10}},children));};exports.default=Section;module.exports=exports["default"];
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/swatch.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(6);var _Label=__webpack_require__(33);var _Label2=_interopRequireDefault(_Label);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var SWATCH_WIDTH=100;var Swatch=function Swatch(_ref){var color=_ref.color,name=_ref.name;return _react2.default.createElement(_reactSketchapp.View,{name:name,style:{marginBottom:48,marginRight:48},__source:{fileName:_jsxFileName,lineNumber:8}},_react2.default.createElement(_reactSketchapp.View,{style:{width:SWATCH_WIDTH,height:SWATCH_WIDTH,backgroundColor:color.hex,borderRadius:4,marginBottom:8},__source:{fileName:_jsxFileName,lineNumber:9}}),_react2.default.createElement(_Label2.default,{bold:true,__source:{fileName:_jsxFileName,lineNumber:18}},name),_react2.default.createElement(_Label2.default,{__source:{fileName:_jsxFileName,lineNumber:19}},color.hex));};exports.default=Swatch;module.exports=exports["default"];
 
 /***/ }),
 /* 131 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports,"__esModule",{value:true});var _jsxFileName="/Users/mattapperson/Development/nachos-ui/src/sketchapp-library/components/section.js";var _react=__webpack_require__(0);var _react2=_interopRequireDefault(_react);var _reactSketchapp=__webpack_require__(6);var _Label=__webpack_require__(33);var _Label2=_interopRequireDefault(_Label);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var Section=function Section(_ref){var title=_ref.title,children=_ref.children;return _react2.default.createElement(_reactSketchapp.View,{style:{marginBottom:96,flexDirection:"row"},__source:{fileName:_jsxFileName,lineNumber:6}},_react2.default.createElement(_reactSketchapp.View,{style:{width:200},__source:{fileName:_jsxFileName,lineNumber:7}},_react2.default.createElement(_Label2.default,{bold:true,__source:{fileName:_jsxFileName,lineNumber:8}},title)),_react2.default.createElement(_reactSketchapp.View,{__source:{fileName:_jsxFileName,lineNumber:10}},children));};exports.default=Section;module.exports=exports["default"];
+
+/***/ }),
+/* 132 */
 /***/ (function(module, exports) {
 
 Object.defineProperty(exports,"__esModule",{value:true});exports.createNewDocument=createNewDocument;exports.getStoragePath=getStoragePath;exports.saveDocument=saveDocument;exports.closeDocument=closeDocument;exports.addLibrary=addLibrary;function createNewDocument(context){return context.api().newDocument()._object;}function getStoragePath(context){return context.scriptPath.split('Contents/Sketch/')[0]+context.command.identifier()+'.sketch';}function saveDocument(document,path){var error=MOPointer.alloc().init();var url=NSURL.URLWithString(path);var oldUrl=NSURL.URLWithString('not used');document.writeToURL_ofType_forSaveOperation_originalContentsURL_error(url,0,NSSaveToOperation,oldUrl,error);}function closeDocument(document){document.close();}function addLibrary(path){var libUrl=NSURL.fileURLWithPath_(path);var libraryController=AppController.sharedInstance().librariesController();libraryController.addAssetLibraryAtURL_(libUrl);}

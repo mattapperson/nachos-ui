@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension, import/no-named-as-default-member */
 
 import React from "react";
-import { render, Document, View, Page } from "react-sketchapp";
+import { render, View, Page } from "react-sketchapp";
 import designSystem from "./designSystem";
 
 import exposeSymbols from "./exposeSymbols";

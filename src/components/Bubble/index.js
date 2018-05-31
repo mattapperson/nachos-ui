@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import { withTheme } from "../Theme";
 import { StyleSheet } from "react-native";
+import Text from "../typography/Text";
 
 const Bubble = props => {
   const {

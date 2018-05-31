@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import Text from "../typography/Text";
 import { withTheme } from "../Theme";
 
 const Badge = props => {
@@ -30,6 +31,7 @@ Badge.themeConfig = {
       minWidth: 40
     },
     text: {
+      paddingVertical: 0,
       fontSize: 12,
       color: "#fff",
       textAlign: "center"

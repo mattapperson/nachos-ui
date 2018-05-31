@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import Icon from "../Icon";
 import { withTheme } from "../Theme";
 import { StyleSheet } from "react-native";
+import Text from "../typography/Text";
 
 const Button = props => {
   const {
@@ -13,8 +14,6 @@ const Button = props => {
     children,
     style,
     textStyle,
-    disabledStyle,
-    disabledTextStyle,
     type,
     kind,
     uppercase,
@@ -49,6 +48,7 @@ const Button = props => {
     theme.baseBtn,
     theme[`btn_kind_${kind}`],
     theme[`state_${type}`],
+    disabled ? theme.disabledStyle : {},
     style
   ];
 
@@ -57,7 +57,7 @@ const Button = props => {
     theme[`text_kind_${kind}`],
     theme[`iconState_${type}`],
     textStyle,
-    disabled ? disabledTextStyle : {}
+    disabled ? theme.disabledTextStyle : {}
   ];
 
   let leftIcon;
@@ -84,7 +84,7 @@ const Button = props => {
   }
   delete btnStyles.color;
   return (
-    <View style={[theme.container, disabled ? disabledStyle : {}]}>
+    <View style={theme.container}>
       <TouchableOpacity
         {...touchableProps}
         {...switcherProp}
@@ -113,11 +113,17 @@ Button.themeConfig = {
       padding: 10,
       paddingHorizontal: 20
     },
+    disabledStyle: {
+      backgroundColor: "#fafafa"
+    },
     baseText: {
       alignSelf: "center",
       color: "@alternateTextColor",
       paddingHorizontal: 8,
       fontWeight: "600"
+    },
+    disabledTextStyle: {
+      color: "#dbdadf"
     },
     innerContainer: {
       flexDirection: "row",
@@ -172,8 +178,6 @@ Button.propTypes = {
   children: PropTypes.any,
   style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   textStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
-  disabledStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
-  disabledTextStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   type: PropTypes.oneOf(["primary", "danger", "success", "naked"]),
   kind: PropTypes.oneOf(["rounded", "squared"]),
   onPress: PropTypes.func,
@@ -198,7 +202,6 @@ Button.defaultProps = {
   iconSize: 16,
   activeOpacity: 0.8,
   disabled: false,
-  disabledStyle: { opacity: 0.3 },
   type: "primary",
   kind: "rounded",
   onPress: () => {},
