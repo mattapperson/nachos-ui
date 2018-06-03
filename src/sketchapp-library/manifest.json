@@ -17,9 +17,6 @@
   ],
   "menu": {
     "title": "react-sketch-library",
-    "items": [
-      "react-sketch-library-example",
-      "render"
-    ]
+    "items": ["react-sketch-library-example", "render"]
   }
 }

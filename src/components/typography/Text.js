@@ -10,8 +10,8 @@ const Text = props => {
   if (textProps.style) {
     textProps.style = StyleSheet.flatten(textProps.style);
   }
-  textProps.style = [theme.base, { textAlign: props.align }, textProps.style];
-
+  textProps.style = [theme.base, textProps.style];
+  if (props.align) textProps.style.push({ textAlign: props.align });
   // NOTE: delete Component specific props
   delete textProps.theme;
   delete textProps.align;
@@ -24,11 +24,13 @@ Text.themeConfig = {
     base: {
       fontFamily: "Helvetica",
       fontSize: 14,
+      height: 14,
+      lineHeight: 20,
       fontWeight: "200",
       fontStyle: "normal",
       color: "@textColor",
       paddingVertical: 10,
-      textAlign: "left"
+      textAlign: "center"
     }
   }
 };
@@ -43,6 +45,6 @@ Text.propTypes = {
   theme: PropTypes.object.isRequired
 };
 
-Text.defaultProps = { align: "left" };
+Text.defaultProps = {};
 
 export default withTheme("Text", Text);

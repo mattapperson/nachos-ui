@@ -6,6 +6,9 @@ import { withTheme } from "../Theme";
 import { StyleSheet } from "react-native";
 import Text from "../typography/Text";
 
+// This is to fix an issue with react-sketchapp
+const TouchableView = TouchableOpacity || View;
+
 const Button = props => {
   const {
     theme,
@@ -85,7 +88,7 @@ const Button = props => {
   delete btnStyles.color;
   return (
     <View style={theme.container}>
-      <TouchableOpacity
+      <TouchableView
         {...touchableProps}
         {...switcherProp}
         disabled={disabled}
@@ -94,12 +97,12 @@ const Button = props => {
         accessibilityTraits="button"
         accessibilityComponentType="button"
       >
-        <View style={theme.innerContainer}>
+        <View name="innerContainer" style={theme.innerContainer}>
           {leftIcon}
           {content}
           {rightIcon}
         </View>
-      </TouchableOpacity>
+      </TouchableView>
     </View>
   );
 };

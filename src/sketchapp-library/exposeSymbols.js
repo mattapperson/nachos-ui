@@ -8,13 +8,31 @@ export default function() {
   req.keys().forEach(filename => {
     var sketchComponent = req(filename);
 
-    makeSymbol(
-      () => (
-        <Provider>
-          <sketchComponent.Component />
-        </Provider>
-      ),
-      sketchComponent.name
-    );
+    if (sketchComponent.components) {
+      sketchComponent.components.forEach(comp => {
+        try {
+          makeSymbol(
+            () => (
+              <Provider>
+                <comp.Component />
+              </Provider>
+            ),
+            comp.name
+          );
+        } catch (e) {
+          console.error(`Error rendering ${comp.name}`);
+          throw e;
+        }
+      });
+    } else {
+      makeSymbol(
+        () => (
+          <Provider>
+            <sketchComponent.Component />
+          </Provider>
+        ),
+        sketchComponent.name
+      );
+    }
   });
 }

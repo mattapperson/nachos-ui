@@ -11,7 +11,6 @@
   },
   "repository": "avocode/nachos-ui",
   "keywords": ["react", "react-component", "react-native", "ui-kit"],
-
   "scripts": {
     "build": "babel src/ -d lib/",
     "build:web": "webpack --progress -p",
@@ -23,7 +22,9 @@
     "docs": "build-storybook -c .storybook -o .styleguide",
     "build-sketch": "skpm-build",
     "watch-sketch": "skpm-build --watch",
-    "start-sketch": "skpm-build --watch --run"
+    "start-sketch": "skpm-build --watch --run",
+    "start-sketch:once": "skpm-build --run",
+    "sketch-link": "skpm-link"
   },
   "skpm": {
     "name": "nachos-ui-library",
@@ -112,6 +113,7 @@
     "react-sketchapp": "^2.0.0",
     "react-test-renderer": "^16.3.1",
     "rsg-alt": "^3.17.1",
+    "skpm": "^1.0.15",
     "skpm-builder": "^0.1.1",
     "string-replace-webpack-plugin": "^0.0.5",
     "url-loader": "^0.5.7",

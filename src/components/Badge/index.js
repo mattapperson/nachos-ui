@@ -33,6 +33,7 @@ Badge.themeConfig = {
     text: {
       paddingVertical: 0,
       fontSize: 12,
+      lineHeight: 16,
       color: "#fff",
       textAlign: "center"
     }

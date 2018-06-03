@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-filename-extension, import/no-named-as-default-member */
 
 import React from "react";
-import { render, View, Page } from "react-sketchapp";
+import { render, View, Page, injectSymbols } from "react-sketchapp";
 import designSystem from "./designSystem";
 
 import exposeSymbols from "./exposeSymbols";
@@ -20,22 +20,18 @@ import {
 } from "./sketch-utils";
 
 const SketchDocument = ({ system }) => (
-  <React.Fragment>
-    <Page name="Branding">
-      <View>
-        <View name="Intro" style={{ width: 420, marginBottom: 34 }}>
-          <Label>
-            This is an example react-sketchapp document, showing how to render a
-            styleguide from a data representation of your design system.
-          </Label>
-        </View>
+  <Page name="Branding">
+    <View name="Intro" style={{ width: 420, marginBottom: 34 }}>
+      <Label>
+        This is an example react-sketchapp document, showing how to render a
+        styleguide from a data representation of your design system.
+      </Label>
+    </View>
 
-        <Section title="Color Palette">
-          <Palette colors={system.colors} />
-        </Section>
-      </View>
-    </Page>
-  </React.Fragment>
+    <Section title="Color Palette">
+      <Palette colors={system.colors} />
+    </Section>
+  </Page>
 );
 
 export function generateLibrary(context) {
