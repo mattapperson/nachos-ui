@@ -30,7 +30,7 @@ Text.themeConfig = {
       fontStyle: "normal",
       color: "@textColor",
       paddingVertical: 10,
-      textAlign: "center"
+      textAlign: "left"
     }
   }
 };

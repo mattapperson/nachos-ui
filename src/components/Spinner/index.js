@@ -5,7 +5,9 @@ import { withTheme } from "../Theme";
 
 class Spinner extends Component {
   static themeConfig = {
-    props: {},
+    props: {
+      color: "@primaryColor"
+    },
     style: {
       base: { flexDirection: "row" }
     }
@@ -19,7 +21,6 @@ class Spinner extends Component {
 
   static defaultProps = {
     size: 25,
-    color: "@primaryColor",
     duration: 450
   };
 

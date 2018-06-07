@@ -25,14 +25,19 @@ export default function() {
         }
       });
     } else {
-      makeSymbol(
-        () => (
-          <Provider>
-            <sketchComponent.Component />
-          </Provider>
-        ),
-        sketchComponent.name
-      );
+      try {
+        makeSymbol(
+          () => (
+            <Provider>
+              <sketchComponent.Component />
+            </Provider>
+          ),
+          sketchComponent.name
+        );
+      } catch (e) {
+        console.error(`Error rendering ${sketchComponent.name}`);
+        throw e;
+      }
     }
   });
 }

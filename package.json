@@ -10,7 +10,12 @@
     "email": "petr@avocode.com"
   },
   "repository": "avocode/nachos-ui",
-  "keywords": ["react", "react-component", "react-native", "ui-kit"],
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native",
+    "ui-kit"
+  ],
   "scripts": {
     "build": "babel src/ -d lib/",
     "build:web": "webpack --progress -p",
@@ -50,7 +55,9 @@
       "__DEV__": true
     },
     "setupTestFrameworkScriptFile": "<rootDir>/scripts/enzyme_setup.js",
-    "testMatch": ["<rootDir>/src/**/?(*.)spec.js"]
+    "testMatch": [
+      "<rootDir>/src/**/?(*.)spec.js"
+    ]
   },
   "peerDependencies": {
     "react": ">=16.3.0",
@@ -109,7 +116,7 @@
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-native-mock": "^0.3.1",
-    "react-native-web": "^0.6.1",
+    "react-native-web": "^0.8.0",
     "react-sketchapp": "^2.0.0",
     "react-test-renderer": "^16.3.1",
     "rsg-alt": "^3.17.1",

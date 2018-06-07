@@ -5,7 +5,7 @@ module.exports = {
   Card: require("./components/Card"),
   Carousel: require("./components/Carousel"),
   Checkbox: require("./components/Checkbox"),
-  Gravatar: require("./components/Gravatar"),
+  Avatar: require("./components/Avatar"),
   Icon: require("./components/Icon"),
   Indicator: require("./components/Indicator"),
   Input: require("./components/Input"),

@@ -4,6 +4,9 @@ import { View, TouchableOpacity } from "react-native";
 import Icon from "../Icon";
 import { withTheme } from "../Theme";
 
+// This is to fix an issue with react-sketchapp
+const TouchableView = TouchableOpacity || View;
+
 const Checkbox = props => {
   const {
     activeOpacity,
@@ -32,7 +35,7 @@ const Checkbox = props => {
   const isChecked = checked || selected || false;
   return (
     <View style={disabled ? disabledStyle : {}}>
-      <TouchableOpacity
+      <TouchableView
         activeOpacity={activeOpacity}
         disabled={disabled}
         style={[theme.base, isChecked ? theme.active : {}, style]}
@@ -49,7 +52,7 @@ const Checkbox = props => {
             />
           )}
         {isChecked && checkComponent}
-      </TouchableOpacity>
+      </TouchableView>
     </View>
   );
 };

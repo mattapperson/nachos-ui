@@ -2,20 +2,17 @@
 
 exports[`should render correctly 1`] = `
 <a
-  className="rn-backgroundColor-wib322 rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-1471scf rn-fontFamily-baq3cm rn-fontSize-1b43r93 rn-fontStyle-13uqrnb rn-fontVariant-ebii48 rn-lineHeight-t9a87b rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-fdjqy7 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+  className="rn-backgroundColor-1niwhzg rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-cursor-1loqt21 rn-display-1471scf rn-fontFamily-baq3cm rn-fontSize-1b43r93 rn-fontStyle-13uqrnb rn-fontVariant-ebii48 rn-height-1pexk7n rn-lineHeight-rjixqe rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textAlign-fdjqy7 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0"
+  data-focusable={true}
   dir="auto"
   onClick={[Function]}
   onKeyDown={[Function]}
   role="link"
   style={
     Object {
-      "WebkitTextDecorationColor": "#7945ef",
-      "WebkitTextDecorationStyle": "solid",
-      "color": "rgba(121,69,239,1)",
+      "color": "rgba(121,69,239,1.00)",
       "fontWeight": "normal",
-      "textDecoration": "underline",
-      "textDecorationColor": "#7945ef",
-      "textDecorationStyle": "solid",
+      "textDecoration": "underline solid rgba(121,69,239,1.00)",
     }
   }
 >

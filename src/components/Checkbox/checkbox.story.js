@@ -10,7 +10,6 @@ const Example = () => {
   return (
     <View style={{ marginVertical: 15 }}>
       <Checkbox style={checkboxStyle} checked={false} />
-      <Checkbox style={checkboxStyle} kind="circle" checked={false} />
       <Checkbox style={checkboxStyle} disabled />
     </View>
   );
@@ -24,7 +23,6 @@ const CheckedExample = () => {
   return (
     <View style={{ marginVertical: 15 }}>
       <Checkbox style={checkboxStyle} checked={true} />
-      <Checkbox style={checkboxStyle} kind="circle" checked={true} />
       <Checkbox style={checkboxStyle} checked disabled />
     </View>
   );

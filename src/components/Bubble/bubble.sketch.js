@@ -8,7 +8,6 @@ export const components = [
   {
     Component: () => (
       <Bubble
-        arrowPosition="right"
         bubbleStyle={{
           backgroundColor: "#ececee"
         }}
@@ -19,22 +18,10 @@ export const components = [
         What’s cooking?
       </Bubble>
     ),
-    name: "Bubble"
+    name: "Bubble/Left"
   },
   {
-    Component: () => (
-      <Bubble
-        arrowPosition="right"
-        bubbleStyle={{
-          backgroundColor: "#ececee"
-        }}
-        textStyle={{
-          color: "#8a8aa2"
-        }}
-      >
-        What’s cooking?
-      </Bubble>
-    ),
-    name: "Bubble Left"
+    Component: () => <Bubble arrowPosition="right">What’s cooking?</Bubble>,
+    name: "Bubble/Right"
   }
 ];

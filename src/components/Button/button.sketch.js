@@ -7,7 +7,7 @@ export const components = [
   {
     Component: () => (
       <Button type="success" iconName="person" style={btnStyle}>
-        Success....
+        Success
       </Button>
     ),
     name: "Button/Success"

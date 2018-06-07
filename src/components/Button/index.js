@@ -121,7 +121,9 @@ Button.themeConfig = {
     },
     baseText: {
       alignSelf: "center",
+      textAlign: "center",
       color: "@alternateTextColor",
+      paddingTop: 0, // fix for safari
       paddingHorizontal: 8,
       fontWeight: "600"
     },
